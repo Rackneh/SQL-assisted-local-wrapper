@@ -1,0 +1,3786 @@
+[
+ {
+  "file": "0000_BITMAP_HOMESTEAD_MINIMIZEGLYPH9_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_MINIMIZEGLYPH9_BMP",
+   1033
+  ],
+  "size": 64,
+  "magic": "4e006f0072006d00"
+ },
+ {
+  "file": "0001_BITMAP_HOMESTEAD_MINIMIZEGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_MINIMIZEGLYPH_BMP",
+   1033
+  ],
+  "size": 22,
+  "magic": "0300030000000300"
+ },
+ {
+  "file": "0002_BITMAP_HOMESTEAD_NORMALGROUPBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_NORMALGROUPBACKGROUND_BMP",
+   1033
+  ],
+  "size": 374,
+  "magic": "4e004f0052004d00"
+ },
+ {
+  "file": "0003_BITMAP_HOMESTEAD_NORMALGROUPCOLLAPSE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_NORMALGROUPCOLLAPSE_BMP",
+   1033
+  ],
+  "size": 20,
+  "magic": "0f000f000f000f00"
+ },
+ {
+  "file": "0004_BITMAP_HOMESTEAD_NORMALGROUPEXPAND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_NORMALGROUPEXPAND_BMP",
+   1033
+  ],
+  "size": 326,
+  "magic": "42006c0075006500"
+ },
+ {
+  "file": "0005_BITMAP_HOMESTEAD_NORMALGROUPHEAD_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_NORMALGROUPHEAD_BMP",
+   1033
+  ],
+  "size": 2,
+  "magic": "0300"
+ },
+ {
+  "file": "0006_BITMAP_HOMESTEAD_PLACEBARBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_PLACEBARBACKGROUND_BMP",
+   1033
+  ],
+  "size": 78,
+  "magic": "4e006f0072006d00"
+ },
+ {
+  "file": "0007_BITMAP_HOMESTEAD_PLACEBARBUTTONS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_PLACEBARBUTTONS_BMP",
+   1033
+  ],
+  "size": 129430,
+  "magic": "3b002d002d002d00"
+ },
+ {
+  "file": "0008_BITMAP_HOMESTEAD_PROGRESSCHUNKVERT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_PROGRESSCHUNKVERT_BMP",
+   1033
+  ],
+  "size": 134386,
+  "magic": "3b002d002d002d00"
+ },
+ {
+  "file": "0009_BITMAP_HOMESTEAD_PROGRESSCHUNK_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_PROGRESSCHUNK_BMP",
+   1033
+  ],
+  "size": 133232,
+  "magic": "3b002d002d002d00"
+ },
+ {
+  "file": "0010_BITMAP_HOMESTEAD_PROGRESSTRACKVERT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_PROGRESSTRACKVERT_BMP",
+   1033
+  ],
+  "size": 129428,
+  "magic": "3b002d002d002d00"
+ },
+ {
+  "file": "0011_BITMAP_HOMESTEAD_PROGRESSTRACK_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_PROGRESSTRACK_BMP",
+   1033
+  ],
+  "size": 134384,
+  "magic": "3b002d002d002d00"
+ },
+ {
+  "file": "0012_BITMAP_HOMESTEAD_RADIOBUTTON13_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_RADIOBUTTON13_BMP",
+   1033
+  ],
+  "size": 133230,
+  "magic": "3b002d002d002d00"
+ },
+ {
+  "file": "0013_BITMAP_HOMESTEAD_RADIOBUTTON16_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_RADIOBUTTON16_BMP",
+   1033
+  ],
+  "size": 129386,
+  "magic": "3b002d002d002d00"
+ },
+ {
+  "file": "0014_BITMAP_HOMESTEAD_RADIOBUTTON25_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_RADIOBUTTON25_BMP",
+   1033
+  ],
+  "size": 134342,
+  "magic": "3b002d002d002d00"
+ },
+ {
+  "file": "0015_BITMAP_HOMESTEAD_RESIZEGRIP2_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_RESIZEGRIP2_BMP",
+   1033
+  ],
+  "size": 133188,
+  "magic": "3b002d002d002d00"
+ },
+ {
+  "file": "0016_BITMAP_HOMESTEAD_RESTOREGLYPH19_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_RESTOREGLYPH19_BMP",
+   1033
+  ],
+  "size": 7672,
+  "magic": "3b002d002d002d00"
+ },
+ {
+  "file": "0017_BITMAP_HOMESTEAD_RESTOREGLYPH23_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_RESTOREGLYPH23_BMP",
+   1033
+  ],
+  "size": 2122,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0018_BITMAP_HOMESTEAD_RESTOREGLYPH6_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_RESTOREGLYPH6_BMP",
+   1033
+  ],
+  "size": 9240,
+  "magic": "2800000014000000"
+ },
+ {
+  "file": "0019_BITMAP_HOMESTEAD_RESTOREGLYPH9_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_RESTOREGLYPH9_BMP",
+   1033
+  ],
+  "size": 14152,
+  "magic": "2800000015000000"
+ },
+ {
+  "file": "0020_BITMAP_HOMESTEAD_RESTOREGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_RESTOREGLYPH_BMP",
+   1033
+  ],
+  "size": 8152,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0021_BITMAP_HOMESTEAD_SCROLLARROWGLYPHSSMALL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SCROLLARROWGLYPHSSMALL_BMP",
+   1033
+  ],
+  "size": 12328,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0022_BITMAP_HOMESTEAD_SCROLLARROWGLYPHS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SCROLLARROWGLYPHS_BMP",
+   1033
+  ],
+  "size": 30040,
+  "magic": "2800000019000000"
+ },
+ {
+  "file": "0023_BITMAP_HOMESTEAD_SCROLLARROWS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SCROLLARROWS_BMP",
+   1033
+  ],
+  "size": 698,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0024_BITMAP_HOMESTEAD_SCROLLSHAFTHORIZONTAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SCROLLSHAFTHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 14152,
+  "magic": "2800000015000000"
+ },
+ {
+  "file": "0025_BITMAP_HOMESTEAD_SCROLLSHAFTVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SCROLLSHAFTVERTICAL_BMP",
+   1033
+  ],
+  "size": 11592,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0026_BITMAP_HOMESTEAD_SCROLLTHUMBGRIPPERHORIZONTAL_B_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SCROLLTHUMBGRIPPERHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 16968,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0027_BITMAP_HOMESTEAD_SCROLLTHUMBGRIPPERVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SCROLLTHUMBGRIPPERVERTICAL_BMP",
+   1033
+  ],
+  "size": 1002,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0028_BITMAP_HOMESTEAD_SCROLLTHUMBHORIZONTAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SCROLLTHUMBHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 2058,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0029_BITMAP_HOMESTEAD_SCROLLTHUMBVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SCROLLTHUMBVERTICAL_BMP",
+   1033
+  ],
+  "size": 5448,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0030_BITMAP_HOMESTEAD_SEPARATORVERT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SEPARATORVERT_BMP",
+   1033
+  ],
+  "size": 1400,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0031_BITMAP_HOMESTEAD_SEPARATOR_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SEPARATOR_BMP",
+   1033
+  ],
+  "size": 2088,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0032_BITMAP_HOMESTEAD_SLIDERTRACK_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SLIDERTRACK_BMP",
+   1033
+  ],
+  "size": 6264,
+  "magic": "28000000d0000000"
+ },
+ {
+  "file": "0033_BITMAP_HOMESTEAD_SMALLCLOSEBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SMALLCLOSEBUTTON_BMP",
+   1033
+  ],
+  "size": 1832,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0034_BITMAP_HOMESTEAD_SMALLCLOSEGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SMALLCLOSEGLYPH_BMP",
+   1033
+  ],
+  "size": 2600,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0035_BITMAP_HOMESTEAD_SMALLFRAMECAPTIONSIZING_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SMALLFRAMECAPTIONSIZING_BMP",
+   1033
+  ],
+  "size": 1564,
+  "magic": "2800000014000000"
+ },
+ {
+  "file": "0036_BITMAP_HOMESTEAD_SMALLFRAMECAPTION_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SMALLFRAMECAPTION_BMP",
+   1033
+  ],
+  "size": 2720,
+  "magic": "280000000b000000"
+ },
+ {
+  "file": "0037_BITMAP_HOMESTEAD_SPECIALGROUPBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPECIALGROUPBACKGROUND_BMP",
+   1033
+  ],
+  "size": 4376,
+  "magic": "2800000018000000"
+ },
+ {
+  "file": "0038_BITMAP_HOMESTEAD_SPECIALGROUPCOLLAPSE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPECIALGROUPCOLLAPSE_BMP",
+   1033
+  ],
+  "size": 3824,
+  "magic": "2800000014000000"
+ },
+ {
+  "file": "0039_BITMAP_HOMESTEAD_SPECIALGROUPEXPAND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPECIALGROUPEXPAND_BMP",
+   1033
+  ],
+  "size": 174,
+  "magic": "280000000e000000"
+ },
+ {
+  "file": "0040_BITMAP_HOMESTEAD_SPECIALGROUPHEAD_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPECIALGROUPHEAD_BMP",
+   1033
+  ],
+  "size": 1584,
+  "magic": "2800000031000000"
+ },
+ {
+  "file": "0041_BITMAP_HOMESTEAD_SPINBUTTONBACKGROUNDDOWN_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPINBUTTONBACKGROUNDDOWN_BMP",
+   1033
+  ],
+  "size": 5008,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0042_BITMAP_HOMESTEAD_SPINBUTTONBACKGROUNDLEFT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPINBUTTONBACKGROUNDLEFT_BMP",
+   1033
+  ],
+  "size": 746,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0043_BITMAP_HOMESTEAD_SPINBUTTONBACKGROUNDRIGHT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPINBUTTONBACKGROUNDRIGHT_BMP",
+   1033
+  ],
+  "size": 5008,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0044_BITMAP_HOMESTEAD_SPINBUTTONBACKGROUNDUP_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPINBUTTONBACKGROUNDUP_BMP",
+   1033
+  ],
+  "size": 1560,
+  "magic": "2800000005000000"
+ },
+ {
+  "file": "0045_BITMAP_HOMESTEAD_SPINDOWNGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPINDOWNGLYPH_BMP",
+   1033
+  ],
+  "size": 5008,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0046_BITMAP_HOMESTEAD_SPINLEFTGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPINLEFTGLYPH_BMP",
+   1033
+  ],
+  "size": 1560,
+  "magic": "2800000005000000"
+ },
+ {
+  "file": "0047_BITMAP_HOMESTEAD_SPINRIGHTGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPINRIGHTGLYPH_BMP",
+   1033
+  ],
+  "size": 154,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0048_BITMAP_HOMESTEAD_SPINUPGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_SPINUPGLYPH_BMP",
+   1033
+  ],
+  "size": 142,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0049_BITMAP_HOMESTEAD_STARTBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTBUTTON_BMP",
+   1033
+  ],
+  "size": 1544,
+  "magic": "2800000016000000"
+ },
+ {
+  "file": "0050_BITMAP_HOMESTEAD_STARTGROUPBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTGROUPBACKGROUND_BMP",
+   1033
+  ],
+  "size": 11592,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0051_BITMAP_HOMESTEAD_STARTGROUPNEWAPPBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTGROUPNEWAPPBUTTON_BMP",
+   1033
+  ],
+  "size": 16968,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0052_BITMAP_HOMESTEAD_STARTGROUPSEPERATOR_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTGROUPSEPERATOR_BMP",
+   1033
+  ],
+  "size": 1002,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0053_BITMAP_HOMESTEAD_STARTGROUPTOOLBARBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTGROUPTOOLBARBUTTON_BMP",
+   1033
+  ],
+  "size": 2058,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0054_BITMAP_HOMESTEAD_STARTPANELLOGOFFBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTPANELLOGOFFBACKGROUND_BMP",
+   1033
+  ],
+  "size": 5448,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0055_BITMAP_HOMESTEAD_STARTPANELLOGOFFBUTTONSHOT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTPANELLOGOFFBUTTONSHOT_BMP",
+   1033
+  ],
+  "size": 2204,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0056_BITMAP_HOMESTEAD_STARTPANELLOGOFFBUTTONS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTPANELLOGOFFBUTTONS_BMP",
+   1033
+  ],
+  "size": 138,
+  "magic": "2800000001000000"
+ },
+ {
+  "file": "0057_BITMAP_HOMESTEAD_STARTPANELMFUBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTPANELMFUBACKGROUND_BMP",
+   1033
+  ],
+  "size": 2154,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0058_BITMAP_HOMESTEAD_STARTPANELMOREPROGARROWHOT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTPANELMOREPROGARROWHOT_BMP",
+   1033
+  ],
+  "size": 9162,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0059_BITMAP_HOMESTEAD_STARTPANELMOREPROGARROW_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTPANELMOREPROGARROW_BMP",
+   1033
+  ],
+  "size": 2278,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0060_BITMAP_HOMESTEAD_STARTPANELMOREPROGBACKGROUND_B_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTPANELMOREPROGBACKGROUND_BMP",
+   1033
+  ],
+  "size": 1002,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0061_BITMAP_HOMESTEAD_STARTPANELPLACESBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTPANELPLACESBACKGROUND_BMP",
+   1033
+  ],
+  "size": 2058,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0062_BITMAP_HOMESTEAD_STARTPLACESSEPARATOR_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTPLACESSEPARATOR_BMP",
+   1033
+  ],
+  "size": 2728,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0063_BITMAP_HOMESTEAD_STARTPROGRAMSSEPARATOR_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTPROGRAMSSEPARATOR_BMP",
+   1033
+  ],
+  "size": 1896,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0064_BITMAP_HOMESTEAD_STARTUSERPANEL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STARTUSERPANEL_BMP",
+   1033
+  ],
+  "size": 1544,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0065_BITMAP_HOMESTEAD_STATUSBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STATUSBACKGROUND_BMP",
+   1033
+  ],
+  "size": 1544,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0066_BITMAP_HOMESTEAD_STATUSPANE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_STATUSPANE_BMP",
+   1033
+  ],
+  "size": 1544,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0067_BITMAP_HOMESTEAD_TABBACKGROUND133_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TABBACKGROUND133_BMP",
+   1033
+  ],
+  "size": 9162,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0068_BITMAP_HOMESTEAD_TABBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TABBACKGROUND_BMP",
+   1033
+  ],
+  "size": 2278,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0069_BITMAP_HOMESTEAD_TABITEMBOTH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TABITEMBOTH_BMP",
+   1033
+  ],
+  "size": 1002,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0070_BITMAP_HOMESTEAD_TABITEMLEFT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TABITEMLEFT_BMP",
+   1033
+  ],
+  "size": 2058,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0071_BITMAP_HOMESTEAD_TABITEMRIGHT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TABITEMRIGHT_BMP",
+   1033
+  ],
+  "size": 2728,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0072_BITMAP_HOMESTEAD_TABITEMTOPBOTH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TABITEMTOPBOTH_BMP",
+   1033
+  ],
+  "size": 1182,
+  "magic": "280000006f000000"
+ },
+ {
+  "file": "0073_BITMAP_HOMESTEAD_TABITEMTOPLEFT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TABITEMTOPLEFT_BMP",
+   1033
+  ],
+  "size": 2204,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0074_BITMAP_HOMESTEAD_TABITEMTOPRIGHT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TABITEMTOPRIGHT_BMP",
+   1033
+  ],
+  "size": 2204,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0075_BITMAP_HOMESTEAD_TABITEMTOP_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TABITEMTOP_BMP",
+   1033
+  ],
+  "size": 3416,
+  "magic": "280000006f000000"
+ },
+ {
+  "file": "0076_BITMAP_HOMESTEAD_TABITEM_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TABITEM_BMP",
+   1033
+  ],
+  "size": 1404,
+  "magic": "2800000011000000"
+ },
+ {
+  "file": "0077_BITMAP_HOMESTEAD_TABPANEEDGE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TABPANEEDGE_BMP",
+   1033
+  ],
+  "size": 4664,
+  "magic": "2800000018000000"
+ },
+ {
+  "file": "0078_BITMAP_HOMESTEAD_TASKBANDBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDBACKGROUND_BMP",
+   1033
+  ],
+  "size": 290,
+  "magic": "280000000c000000"
+ },
+ {
+  "file": "0079_BITMAP_HOMESTEAD_TASKBANDBUTTONNOEDGEVERTICAL_B_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDBUTTONNOEDGEVERTICAL_BMP",
+   1033
+  ],
+  "size": 1208,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0080_BITMAP_HOMESTEAD_TASKBANDBUTTONNOEDGE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDBUTTONNOEDGE_BMP",
+   1033
+  ],
+  "size": 294,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0081_BITMAP_HOMESTEAD_TASKBANDBUTTONVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDBUTTONVERTICAL_BMP",
+   1033
+  ],
+  "size": 1292,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0082_BITMAP_HOMESTEAD_TASKBANDBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDBUTTON_BMP",
+   1033
+  ],
+  "size": 5448,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0083_BITMAP_HOMESTEAD_TASKBANDFLASHBUTTONGROUPMENU_B_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDFLASHBUTTONGROUPMENU_BMP",
+   1033
+  ],
+  "size": 8232,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0084_BITMAP_HOMESTEAD_TASKBANDFLASHBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDFLASHBUTTON_BMP",
+   1033
+  ],
+  "size": 20040,
+  "magic": "2800000019000000"
+ },
+ {
+  "file": "0085_BITMAP_HOMESTEAD_TASKBANDHOVER_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDHOVER_BMP",
+   1033
+  ],
+  "size": 376,
+  "magic": "2800000020000000"
+ },
+ {
+  "file": "0086_BITMAP_HOMESTEAD_TASKBANDSCROLLARROWGLYPHS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDSCROLLARROWGLYPHS_BMP",
+   1033
+  ],
+  "size": 9162,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0087_BITMAP_HOMESTEAD_TASKBANDSCROLLARROWS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDSCROLLARROWS_BMP",
+   1033
+  ],
+  "size": 2278,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0088_BITMAP_HOMESTEAD_TASKBANDSCROLLSHAFTHORIZONTAL__1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDSCROLLSHAFTHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 1002,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0089_BITMAP_HOMESTEAD_TASKBANDSCROLLSHAFTVERTICAL_BM_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDSCROLLSHAFTVERTICAL_BMP",
+   1033
+  ],
+  "size": 2058,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0090_BITMAP_HOMESTEAD_TASKBANDSCROLLTHUMBGRIPPERHORI_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDSCROLLTHUMBGRIPPERHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 2728,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0091_BITMAP_HOMESTEAD_TASKBANDSCROLLTHUMBGRIPPERVERT_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDSCROLLTHUMBGRIPPERVERTICAL_BMP",
+   1033
+  ],
+  "size": 1960,
+  "magic": "2800000007000000"
+ },
+ {
+  "file": "0092_BITMAP_HOMESTEAD_TASKBANDSCROLLTHUMBHORIZONTAL__1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDSCROLLTHUMBHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 2792,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0093_BITMAP_HOMESTEAD_TASKBANDSCROLLTHUMBVERTICAL_BM_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBANDSCROLLTHUMBVERTICAL_BMP",
+   1033
+  ],
+  "size": 14186,
+  "magic": "2800000011000000"
+ },
+ {
+  "file": "0094_BITMAP_HOMESTEAD_TASKBARBACKGROUNDVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARBACKGROUNDVERTICAL_BMP",
+   1033
+  ],
+  "size": 2424,
+  "magic": "2800000011000000"
+ },
+ {
+  "file": "0095_BITMAP_HOMESTEAD_TASKBARBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARBACKGROUND_BMP",
+   1033
+  ],
+  "size": 2424,
+  "magic": "2800000011000000"
+ },
+ {
+  "file": "0096_BITMAP_HOMESTEAD_TASKBARCHEVRONVERT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARCHEVRONVERT_BMP",
+   1033
+  ],
+  "size": 1320,
+  "magic": "2800000008000000"
+ },
+ {
+  "file": "0097_BITMAP_HOMESTEAD_TASKBARCHEVRON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARCHEVRON_BMP",
+   1033
+  ],
+  "size": 1320,
+  "magic": "2800000008000000"
+ },
+ {
+  "file": "0098_BITMAP_HOMESTEAD_TASKBARGRIPPERVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARGRIPPERVERTICAL_BMP",
+   1033
+  ],
+  "size": 2504,
+  "magic": "2800000016000000"
+ },
+ {
+  "file": "0099_BITMAP_HOMESTEAD_TASKBARGRIPPER_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARGRIPPER_BMP",
+   1033
+  ],
+  "size": 2472,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0100_BITMAP_HOMESTEAD_TASKBARSIZINGBARBOTTOM_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARSIZINGBARBOTTOM_BMP",
+   1033
+  ],
+  "size": 118,
+  "magic": "2800000005000000"
+ },
+ {
+  "file": "0101_BITMAP_HOMESTEAD_TASKBARSIZINGBARLEFT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARSIZINGBARLEFT_BMP",
+   1033
+  ],
+  "size": 74,
+  "magic": "2800000008000000"
+ },
+ {
+  "file": "0102_BITMAP_HOMESTEAD_TASKBARSIZINGBARRIGHT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARSIZINGBARRIGHT_BMP",
+   1033
+  ],
+  "size": 1104,
+  "magic": "2800000005000000"
+ },
+ {
+  "file": "0103_BITMAP_HOMESTEAD_TASKBARSIZINGBARTOP_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARSIZINGBARTOP_BMP",
+   1033
+  ],
+  "size": 5448,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0104_BITMAP_HOMESTEAD_TASKBARTRAYVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARTRAYVERTICAL_BMP",
+   1033
+  ],
+  "size": 1512,
+  "magic": "2800000007000000"
+ },
+ {
+  "file": "0105_BITMAP_HOMESTEAD_TASKBARTRAY_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TASKBARTRAY_BMP",
+   1033
+  ],
+  "size": 506,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0106_BITMAP_HOMESTEAD_TOOLBARBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TOOLBARBACKGROUND_BMP",
+   1033
+  ],
+  "size": 3646,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0107_BITMAP_HOMESTEAD_TOOLBARBUTTONSSPLITDROPDOWNGLY_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TOOLBARBUTTONSSPLITDROPDOWNGLYPH_BMP",
+   1033
+  ],
+  "size": 1302,
+  "magic": "280000006f000000"
+ },
+ {
+  "file": "0108_BITMAP_HOMESTEAD_TOOLBARBUTTONSSPLITDROPDOWN_BM_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TOOLBARBUTTONSSPLITDROPDOWN_BMP",
+   1033
+  ],
+  "size": 2204,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0109_BITMAP_HOMESTEAD_TOOLBARBUTTONSSPLIT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TOOLBARBUTTONSSPLIT_BMP",
+   1033
+  ],
+  "size": 2204,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0110_BITMAP_HOMESTEAD_TOOLBARBUTTONS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TOOLBARBUTTONS_BMP",
+   1033
+  ],
+  "size": 2798,
+  "magic": "280000006f000000"
+ },
+ {
+  "file": "0111_BITMAP_HOMESTEAD_TOOLBARGRIPPERVERT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TOOLBARGRIPPERVERT_BMP",
+   1033
+  ],
+  "size": 2088,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0112_BITMAP_HOMESTEAD_TOOLBARGRIPPER_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TOOLBARGRIPPER_BMP",
+   1033
+  ],
+  "size": 2088,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0113_BITMAP_HOMESTEAD_TRACKBARDOWN13_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARDOWN13_BMP",
+   1033
+  ],
+  "size": 2088,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0114_BITMAP_HOMESTEAD_TRACKBARDOWN16_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARDOWN16_BMP",
+   1033
+  ],
+  "size": 2088,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0115_BITMAP_HOMESTEAD_TRACKBARDOWN25_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARDOWN25_BMP",
+   1033
+  ],
+  "size": 1256,
+  "magic": "2800000007000000"
+ },
+ {
+  "file": "0116_BITMAP_HOMESTEAD_TRACKBARHORIZONTAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 1288,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0117_BITMAP_HOMESTEAD_TRACKBARLEFT13_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARLEFT13_BMP",
+   1033
+  ],
+  "size": 1288,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0118_BITMAP_HOMESTEAD_TRACKBARLEFT16_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARLEFT16_BMP",
+   1033
+  ],
+  "size": 1256,
+  "magic": "2800000007000000"
+ },
+ {
+  "file": "0119_BITMAP_HOMESTEAD_TRACKBARLEFT25_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARLEFT25_BMP",
+   1033
+  ],
+  "size": 29742,
+  "magic": "2800000063000000"
+ },
+ {
+  "file": "0120_BITMAP_HOMESTEAD_TRACKBARRIGHT13_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARRIGHT13_BMP",
+   1033
+  ],
+  "size": 5112,
+  "magic": "28000000b8000000"
+ },
+ {
+  "file": "0121_BITMAP_HOMESTEAD_TRACKBARRIGHT16_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARRIGHT16_BMP",
+   1033
+  ],
+  "size": 1088,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0122_BITMAP_HOMESTEAD_TRACKBARRIGHT25_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARRIGHT25_BMP",
+   1033
+  ],
+  "size": 6700,
+  "magic": "28000000b9000000"
+ },
+ {
+  "file": "0123_BITMAP_HOMESTEAD_TRACKBARUP13_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARUP13_BMP",
+   1033
+  ],
+  "size": 1112,
+  "magic": "2800000008000000"
+ },
+ {
+  "file": "0124_BITMAP_HOMESTEAD_TRACKBARUP16_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARUP16_BMP",
+   1033
+  ],
+  "size": 4964,
+  "magic": "2800000061000000"
+ },
+ {
+  "file": "0125_BITMAP_HOMESTEAD_TRACKBARUP25_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARUP25_BMP",
+   1033
+  ],
+  "size": 6952,
+  "magic": "2800000048000000"
+ },
+ {
+  "file": "0126_BITMAP_HOMESTEAD_TRACKBARVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRACKBARVERTICAL_BMP",
+   1033
+  ],
+  "size": 6952,
+  "magic": "2800000048000000"
+ },
+ {
+  "file": "0127_BITMAP_HOMESTEAD_TRAYCHEVRONHORIZONTALOPEN_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRAYCHEVRONHORIZONTALOPEN_BMP",
+   1033
+  ],
+  "size": 1688,
+  "magic": "280000009c000000"
+ },
+ {
+  "file": "0128_BITMAP_HOMESTEAD_TRAYCHEVRONHORIZONTAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TRAYCHEVRONHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 1576,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0129_BITMAP_HOMESTEAD_TREEEXPANDCOLLAPSE10_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TREEEXPANDCOLLAPSE10_BMP",
+   1033
+  ],
+  "size": 1576,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0130_BITMAP_HOMESTEAD_TREEEXPANDCOLLAPSE15_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TREEEXPANDCOLLAPSE15_BMP",
+   1033
+  ],
+  "size": 1072,
+  "magic": "2800000004000000"
+ },
+ {
+  "file": "0131_BITMAP_HOMESTEAD_TREEEXPANDCOLLAPSE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_TREEEXPANDCOLLAPSE_BMP",
+   1033
+  ],
+  "size": 2144,
+  "magic": "28000000b4000000"
+ },
+ {
+  "file": "0132_BITMAP_HOMESTEAD_USERTILEBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "HOMESTEAD_USERTILEBACKGROUND_BMP",
+   1033
+  ],
+  "size": 1112,
+  "magic": "2800000086000000"
+ },
+ {
+  "file": "0133_BITMAP_METALLIC_BALLOONCLOSE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_BALLOONCLOSE_BMP",
+   1033
+  ],
+  "size": 1416,
+  "magic": "28000000ac000000"
+ },
+ {
+  "file": "0134_BITMAP_METALLIC_BUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_BUTTON_BMP",
+   1033
+  ],
+  "size": 22722,
+  "magic": "2800000078000000"
+ },
+ {
+  "file": "0135_BITMAP_METALLIC_CAPTIONBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_CAPTIONBUTTON_BMP",
+   1033
+  ],
+  "size": 1942,
+  "magic": "2800000044000000"
+ },
+ {
+  "file": "0136_BITMAP_METALLIC_CHECKBOX13_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_CHECKBOX13_BMP",
+   1033
+  ],
+  "size": 158,
+  "magic": "2800000003000000"
+ },
+ {
+  "file": "0137_BITMAP_METALLIC_CHECKBOX16_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_CHECKBOX16_BMP",
+   1033
+  ],
+  "size": 32810,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0138_BITMAP_METALLIC_CHECKBOX25_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_CHECKBOX25_BMP",
+   1033
+  ],
+  "size": 19242,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0139_BITMAP_METALLIC_CHEVRON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_CHEVRON_BMP",
+   1033
+  ],
+  "size": 2864,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0140_BITMAP_METALLIC_CLOSEBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_CLOSEBUTTON_BMP",
+   1033
+  ],
+  "size": 2864,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0141_BITMAP_METALLIC_CLOSEGLYPH19_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_CLOSEGLYPH19_BMP",
+   1033
+  ],
+  "size": 2864,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0142_BITMAP_METALLIC_CLOSEGLYPH23_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_CLOSEGLYPH23_BMP",
+   1033
+  ],
+  "size": 2864,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0143_BITMAP_METALLIC_CLOSEGLYPH6_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_CLOSEGLYPH6_BMP",
+   1033
+  ],
+  "size": 2864,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0144_BITMAP_METALLIC_CLOSEGLYPH9_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_CLOSEGLYPH9_BMP",
+   1033
+  ],
+  "size": 2864,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0145_BITMAP_METALLIC_CLOSEGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_CLOSEGLYPH_BMP",
+   1033
+  ],
+  "size": 2864,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0146_BITMAP_METALLIC_COMBOBUTTONGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_COMBOBUTTONGLYPH_BMP",
+   1033
+  ],
+  "size": 2864,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0147_BITMAP_METALLIC_COMBOBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_COMBOBUTTON_BMP",
+   1033
+  ],
+  "size": 6954,
+  "magic": "2800000030000000"
+ },
+ {
+  "file": "0148_BITMAP_METALLIC_EXPLORERBARHEADERBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_EXPLORERBARHEADERBACKGROUND_BMP",
+   1033
+  ],
+  "size": 1344,
+  "magic": "280000001c000000"
+ },
+ {
+  "file": "0149_BITMAP_METALLIC_EXPLORERBARHEADERCLOSE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_EXPLORERBARHEADERCLOSE_BMP",
+   1033
+  ],
+  "size": 6162,
+  "magic": "2800000016000000"
+ },
+ {
+  "file": "0150_BITMAP_METALLIC_EXPLORERBARHEADERPIN_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_EXPLORERBARHEADERPIN_BMP",
+   1033
+  ],
+  "size": 6762,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0151_BITMAP_METALLIC_EXPLORERBARTOOLBARBACKGROUND_BM_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_EXPLORERBARTOOLBARBACKGROUND_BMP",
+   1033
+  ],
+  "size": 4826,
+  "magic": "280000001c000000"
+ },
+ {
+  "file": "0152_BITMAP_METALLIC_EXPLORERBARTOOLBARBUTTONSSPLITD_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_EXPLORERBARTOOLBARBUTTONSSPLITDROPDOWN_BMP",
+   1033
+  ],
+  "size": 5766,
+  "magic": "280000001a000000"
+ },
+ {
+  "file": "0153_BITMAP_METALLIC_EXPLORERBARTOOLBARBUTTONSSPLIT__1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_EXPLORERBARTOOLBARBUTTONSSPLIT_BMP",
+   1033
+  ],
+  "size": 2158,
+  "magic": "280000001e000000"
+ },
+ {
+  "file": "0154_BITMAP_METALLIC_EXPLORERBARTOOLBARBUTTONS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_EXPLORERBARTOOLBARBUTTONS_BMP",
+   1033
+  ],
+  "size": 2282,
+  "magic": "280000001a000000"
+ },
+ {
+  "file": "0155_BITMAP_METALLIC_FIELDOUTLINEBLUE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_FIELDOUTLINEBLUE_BMP",
+   1033
+  ],
+  "size": 2286,
+  "magic": "280000001e000000"
+ },
+ {
+  "file": "0156_BITMAP_METALLIC_FRAMEBOTTOM_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_FRAMEBOTTOM_BMP",
+   1033
+  ],
+  "size": 2984,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0157_BITMAP_METALLIC_FRAMECAPTIONMIN_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_FRAMECAPTIONMIN_BMP",
+   1033
+  ],
+  "size": 6504,
+  "magic": "2800000011000000"
+ },
+ {
+  "file": "0158_BITMAP_METALLIC_FRAMECAPTIONSIZING_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_FRAMECAPTIONSIZING_BMP",
+   1033
+  ],
+  "size": 2424,
+  "magic": "2800000011000000"
+ },
+ {
+  "file": "0159_BITMAP_METALLIC_FRAMECAPTION_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_FRAMECAPTION_BMP",
+   1033
+  ],
+  "size": 2424,
+  "magic": "2800000011000000"
+ },
+ {
+  "file": "0160_BITMAP_METALLIC_FRAMELEFT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_FRAMELEFT_BMP",
+   1033
+  ],
+  "size": 1320,
+  "magic": "2800000008000000"
+ },
+ {
+  "file": "0161_BITMAP_METALLIC_FRAMEMAXIMIZED_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_FRAMEMAXIMIZED_BMP",
+   1033
+  ],
+  "size": 1320,
+  "magic": "2800000008000000"
+ },
+ {
+  "file": "0162_BITMAP_METALLIC_FRAMERIGHT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_FRAMERIGHT_BMP",
+   1033
+  ],
+  "size": 2504,
+  "magic": "2800000016000000"
+ },
+ {
+  "file": "0163_BITMAP_METALLIC_GRIPPERVERT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_GRIPPERVERT_BMP",
+   1033
+  ],
+  "size": 2472,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0164_BITMAP_METALLIC_GRIPPER_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_GRIPPER_BMP",
+   1033
+  ],
+  "size": 2212,
+  "magic": "280000001c000000"
+ },
+ {
+  "file": "0165_BITMAP_METALLIC_GROUPBOX_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_GROUPBOX_BMP",
+   1033
+  ],
+  "size": 2520,
+  "magic": "2800000032000000"
+ },
+ {
+  "file": "0166_BITMAP_METALLIC_HELPGLYPH19_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_HELPGLYPH19_BMP",
+   1033
+  ],
+  "size": 1448,
+  "magic": "2800000005000000"
+ },
+ {
+  "file": "0167_BITMAP_METALLIC_HELPGLYPH23_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_HELPGLYPH23_BMP",
+   1033
+  ],
+  "size": 1640,
+  "magic": "2800000008000000"
+ },
+ {
+  "file": "0168_BITMAP_METALLIC_HELPGLYPH6_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_HELPGLYPH6_BMP",
+   1033
+  ],
+  "size": 1160,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0169_BITMAP_METALLIC_HELPGLYPH9_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_HELPGLYPH9_BMP",
+   1033
+  ],
+  "size": 1192,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0170_BITMAP_METALLIC_HELPGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_HELPGLYPH_BMP",
+   1033
+  ],
+  "size": 1128,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0171_BITMAP_METALLIC_IE_PERSONALBARMENU_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_IE_PERSONALBARMENU_BMP",
+   1033
+  ],
+  "size": 1124,
+  "magic": "2800000004000000"
+ },
+ {
+  "file": "0172_BITMAP_METALLIC_LISTVIEWHEADERBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_LISTVIEWHEADERBACKGROUND_BMP",
+   1033
+  ],
+  "size": 1124,
+  "magic": "2800000004000000"
+ },
+ {
+  "file": "0173_BITMAP_METALLIC_LISTVIEWHEADER_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_LISTVIEWHEADER_BMP",
+   1033
+  ],
+  "size": 1128,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0174_BITMAP_METALLIC_MAXIMIZEGLYPH19_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MAXIMIZEGLYPH19_BMP",
+   1033
+  ],
+  "size": 4144,
+  "magic": "280000001c000000"
+ },
+ {
+  "file": "0175_BITMAP_METALLIC_MAXIMIZEGLYPH23_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MAXIMIZEGLYPH23_BMP",
+   1033
+  ],
+  "size": 4200,
+  "magic": "280000006e000000"
+ },
+ {
+  "file": "0176_BITMAP_METALLIC_MAXIMIZEGLYPH6_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MAXIMIZEGLYPH6_BMP",
+   1033
+  ],
+  "size": 12520,
+  "magic": "2800000040010000"
+ },
+ {
+  "file": "0177_BITMAP_METALLIC_MAXIMIZEGLYPH9_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MAXIMIZEGLYPH9_BMP",
+   1033
+  ],
+  "size": 198,
+  "magic": "2800000005000000"
+ },
+ {
+  "file": "0178_BITMAP_METALLIC_MAXIMIZEGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MAXIMIZEGLYPH_BMP",
+   1033
+  ],
+  "size": 2720,
+  "magic": "280000000b000000"
+ },
+ {
+  "file": "0179_BITMAP_METALLIC_MDICAPTIONBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MDICAPTIONBUTTON_BMP",
+   1033
+  ],
+  "size": 4376,
+  "magic": "2800000018000000"
+ },
+ {
+  "file": "0180_BITMAP_METALLIC_MDIGLYPHCLOSE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MDIGLYPHCLOSE_BMP",
+   1033
+  ],
+  "size": 3824,
+  "magic": "2800000014000000"
+ },
+ {
+  "file": "0181_BITMAP_METALLIC_MDIGLYPHMINIMIZE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MDIGLYPHMINIMIZE_BMP",
+   1033
+  ],
+  "size": 234,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0182_BITMAP_METALLIC_MDIGLYPHRESTORE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MDIGLYPHRESTORE_BMP",
+   1033
+  ],
+  "size": 242,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0183_BITMAP_METALLIC_MINIMIZEGLYPH19_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MINIMIZEGLYPH19_BMP",
+   1033
+  ],
+  "size": 3822,
+  "magic": "280000000b000000"
+ },
+ {
+  "file": "0184_BITMAP_METALLIC_MINIMIZEGLYPH23_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MINIMIZEGLYPH23_BMP",
+   1033
+  ],
+  "size": 5242,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0185_BITMAP_METALLIC_MINIMIZEGLYPH6_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MINIMIZEGLYPH6_BMP",
+   1033
+  ],
+  "size": 14122,
+  "magic": "2800000015000000"
+ },
+ {
+  "file": "0186_BITMAP_METALLIC_MINIMIZEGLYPH9_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MINIMIZEGLYPH9_BMP",
+   1033
+  ],
+  "size": 3822,
+  "magic": "280000000b000000"
+ },
+ {
+  "file": "0187_BITMAP_METALLIC_MINIMIZEGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_MINIMIZEGLYPH_BMP",
+   1033
+  ],
+  "size": 3562,
+  "magic": "2800000015000000"
+ },
+ {
+  "file": "0188_BITMAP_METALLIC_NORMALGROUPBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_NORMALGROUPBACKGROUND_BMP",
+   1033
+  ],
+  "size": 5242,
+  "magic": "280000001a000000"
+ },
+ {
+  "file": "0189_BITMAP_METALLIC_NORMALGROUPCOLLAPSE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_NORMALGROUPCOLLAPSE_BMP",
+   1033
+  ],
+  "size": 13902,
+  "magic": "280000002c000000"
+ },
+ {
+  "file": "0190_BITMAP_METALLIC_NORMALGROUPEXPAND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_NORMALGROUPEXPAND_BMP",
+   1033
+  ],
+  "size": 3562,
+  "magic": "2800000015000000"
+ },
+ {
+  "file": "0191_BITMAP_METALLIC_NORMALGROUPHEAD_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_NORMALGROUPHEAD_BMP",
+   1033
+  ],
+  "size": 5242,
+  "magic": "280000001a000000"
+ },
+ {
+  "file": "0192_BITMAP_METALLIC_PLACEBARBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_PLACEBARBACKGROUND_BMP",
+   1033
+  ],
+  "size": 13902,
+  "magic": "280000002c000000"
+ },
+ {
+  "file": "0193_BITMAP_METALLIC_PLACEBARBUTTONS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_PLACEBARBUTTONS_BMP",
+   1033
+  ],
+  "size": 3822,
+  "magic": "280000000b000000"
+ },
+ {
+  "file": "0194_BITMAP_METALLIC_PROGRESSCHUNKVERT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_PROGRESSCHUNKVERT_BMP",
+   1033
+  ],
+  "size": 5242,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0195_BITMAP_METALLIC_PROGRESSCHUNK_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_PROGRESSCHUNK_BMP",
+   1033
+  ],
+  "size": 14122,
+  "magic": "2800000015000000"
+ },
+ {
+  "file": "0196_BITMAP_METALLIC_PROGRESSTRACKVERT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_PROGRESSTRACKVERT_BMP",
+   1033
+  ],
+  "size": 3562,
+  "magic": "2800000015000000"
+ },
+ {
+  "file": "0197_BITMAP_METALLIC_PROGRESSTRACK_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_PROGRESSTRACK_BMP",
+   1033
+  ],
+  "size": 4600,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0198_BITMAP_METALLIC_RADIOBUTTON13_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_RADIOBUTTON13_BMP",
+   1033
+  ],
+  "size": 4600,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0199_BITMAP_METALLIC_RADIOBUTTON16_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_RADIOBUTTON16_BMP",
+   1033
+  ],
+  "size": 426,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0200_BITMAP_METALLIC_RADIOBUTTON25_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_RADIOBUTTON25_BMP",
+   1033
+  ],
+  "size": 822,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0201_BITMAP_METALLIC_RESIZEGRIP2_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_RESIZEGRIP2_BMP",
+   1033
+  ],
+  "size": 398,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0202_BITMAP_METALLIC_RESTOREGLYPH19_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_RESTOREGLYPH19_BMP",
+   1033
+  ],
+  "size": 12140,
+  "magic": "2800000037000000"
+ },
+ {
+  "file": "0203_BITMAP_METALLIC_RESTOREGLYPH23_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_RESTOREGLYPH23_BMP",
+   1033
+  ],
+  "size": 2122,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0204_BITMAP_METALLIC_RESTOREGLYPH6_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_RESTOREGLYPH6_BMP",
+   1033
+  ],
+  "size": 9240,
+  "magic": "2800000014000000"
+ },
+ {
+  "file": "0205_BITMAP_METALLIC_RESTOREGLYPH9_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_RESTOREGLYPH9_BMP",
+   1033
+  ],
+  "size": 10794,
+  "magic": "2800000015000000"
+ },
+ {
+  "file": "0206_BITMAP_METALLIC_RESTOREGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_RESTOREGLYPH_BMP",
+   1033
+  ],
+  "size": 8152,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0207_BITMAP_METALLIC_SCROLLARROWGLYPHSSMALL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SCROLLARROWGLYPHSSMALL_BMP",
+   1033
+  ],
+  "size": 12328,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0208_BITMAP_METALLIC_SCROLLARROWGLYPHS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SCROLLARROWGLYPHS_BMP",
+   1033
+  ],
+  "size": 30040,
+  "magic": "2800000019000000"
+ },
+ {
+  "file": "0209_BITMAP_METALLIC_SCROLLARROWS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SCROLLARROWS_BMP",
+   1033
+  ],
+  "size": 698,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0210_BITMAP_METALLIC_SCROLLSHAFTHORIZONTAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SCROLLSHAFTHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 10794,
+  "magic": "2800000015000000"
+ },
+ {
+  "file": "0211_BITMAP_METALLIC_SCROLLSHAFTVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SCROLLSHAFTVERTICAL_BMP",
+   1033
+  ],
+  "size": 9162,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0212_BITMAP_METALLIC_SCROLLTHUMBGRIPPERHORIZONTAL_BM_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SCROLLTHUMBGRIPPERHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 13290,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0213_BITMAP_METALLIC_SCROLLTHUMBGRIPPERVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SCROLLTHUMBGRIPPERVERTICAL_BMP",
+   1033
+  ],
+  "size": 1002,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0214_BITMAP_METALLIC_SCROLLTHUMBHORIZONTAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SCROLLTHUMBHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 2058,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0215_BITMAP_METALLIC_SCROLLTHUMBVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SCROLLTHUMBVERTICAL_BMP",
+   1033
+  ],
+  "size": 4202,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0216_BITMAP_METALLIC_SEPARATORVERT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SEPARATORVERT_BMP",
+   1033
+  ],
+  "size": 938,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0217_BITMAP_METALLIC_SEPARATOR_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SEPARATOR_BMP",
+   1033
+  ],
+  "size": 3114,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0218_BITMAP_METALLIC_SLIDERTRACK_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SLIDERTRACK_BMP",
+   1033
+  ],
+  "size": 6266,
+  "magic": "28000000d0000000"
+ },
+ {
+  "file": "0219_BITMAP_METALLIC_SMALLCLOSEBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SMALLCLOSEBUTTON_BMP",
+   1033
+  ],
+  "size": 1806,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0220_BITMAP_METALLIC_SMALLCLOSEGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SMALLCLOSEGLYPH_BMP",
+   1033
+  ],
+  "size": 4650,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0221_BITMAP_METALLIC_SMALLFRAMECAPTIONSIZING_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SMALLFRAMECAPTIONSIZING_BMP",
+   1033
+  ],
+  "size": 590,
+  "magic": "2800000014000000"
+ },
+ {
+  "file": "0222_BITMAP_METALLIC_SMALLFRAMECAPTION_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SMALLFRAMECAPTION_BMP",
+   1033
+  ],
+  "size": 1962,
+  "magic": "280000000b000000"
+ },
+ {
+  "file": "0223_BITMAP_METALLIC_SPECIALGROUPBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPECIALGROUPBACKGROUND_BMP",
+   1033
+  ],
+  "size": 3694,
+  "magic": "2800000018000000"
+ },
+ {
+  "file": "0224_BITMAP_METALLIC_SPECIALGROUPCOLLAPSE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPECIALGROUPCOLLAPSE_BMP",
+   1033
+  ],
+  "size": 3118,
+  "magic": "2800000014000000"
+ },
+ {
+  "file": "0225_BITMAP_METALLIC_SPECIALGROUPEXPAND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPECIALGROUPEXPAND_BMP",
+   1033
+  ],
+  "size": 174,
+  "magic": "280000000e000000"
+ },
+ {
+  "file": "0226_BITMAP_METALLIC_SPECIALGROUPHEAD_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPECIALGROUPHEAD_BMP",
+   1033
+  ],
+  "size": 1522,
+  "magic": "2800000031000000"
+ },
+ {
+  "file": "0227_BITMAP_METALLIC_SPINBUTTONBACKGROUNDDOWN_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPINBUTTONBACKGROUNDDOWN_BMP",
+   1033
+  ],
+  "size": 11642,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0228_BITMAP_METALLIC_SPINBUTTONBACKGROUNDLEFT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPINBUTTONBACKGROUNDLEFT_BMP",
+   1033
+  ],
+  "size": 746,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0229_BITMAP_METALLIC_SPINBUTTONBACKGROUNDRIGHT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPINBUTTONBACKGROUNDRIGHT_BMP",
+   1033
+  ],
+  "size": 11642,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0230_BITMAP_METALLIC_SPINBUTTONBACKGROUNDUP_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPINBUTTONBACKGROUNDUP_BMP",
+   1033
+  ],
+  "size": 1034,
+  "magic": "2800000005000000"
+ },
+ {
+  "file": "0231_BITMAP_METALLIC_SPINDOWNGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPINDOWNGLYPH_BMP",
+   1033
+  ],
+  "size": 11642,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0232_BITMAP_METALLIC_SPINLEFTGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPINLEFTGLYPH_BMP",
+   1033
+  ],
+  "size": 1034,
+  "magic": "2800000005000000"
+ },
+ {
+  "file": "0233_BITMAP_METALLIC_SPINRIGHTGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPINRIGHTGLYPH_BMP",
+   1033
+  ],
+  "size": 546,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0234_BITMAP_METALLIC_SPINUPGLYPH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_SPINUPGLYPH_BMP",
+   1033
+  ],
+  "size": 362,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0235_BITMAP_METALLIC_STARTBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTBUTTON_BMP",
+   1033
+  ],
+  "size": 1544,
+  "magic": "2800000016000000"
+ },
+ {
+  "file": "0236_BITMAP_METALLIC_STARTGROUPBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTGROUPBACKGROUND_BMP",
+   1033
+  ],
+  "size": 11592,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0237_BITMAP_METALLIC_STARTGROUPNEWAPPBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTGROUPNEWAPPBUTTON_BMP",
+   1033
+  ],
+  "size": 16968,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0238_BITMAP_METALLIC_STARTGROUPSEPERATOR_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTGROUPSEPERATOR_BMP",
+   1033
+  ],
+  "size": 1002,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0239_BITMAP_METALLIC_STARTGROUPTOOLBARBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTGROUPTOOLBARBUTTON_BMP",
+   1033
+  ],
+  "size": 2058,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0240_BITMAP_METALLIC_STARTPANELLOGOFFBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTPANELLOGOFFBACKGROUND_BMP",
+   1033
+  ],
+  "size": 5448,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0241_BITMAP_METALLIC_STARTPANELLOGOFFBUTTONSHOT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTPANELLOGOFFBUTTONSHOT_BMP",
+   1033
+  ],
+  "size": 1598,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0242_BITMAP_METALLIC_STARTPANELLOGOFFBUTTONS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTPANELLOGOFFBUTTONS_BMP",
+   1033
+  ],
+  "size": 138,
+  "magic": "2800000001000000"
+ },
+ {
+  "file": "0243_BITMAP_METALLIC_STARTPANELMFUBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTPANELMFUBACKGROUND_BMP",
+   1033
+  ],
+  "size": 5082,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0244_BITMAP_METALLIC_STARTPANELMOREPROGARROWHOT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTPANELMOREPROGARROWHOT_BMP",
+   1033
+  ],
+  "size": 9162,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0245_BITMAP_METALLIC_STARTPANELMOREPROGARROW_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTPANELMOREPROGARROW_BMP",
+   1033
+  ],
+  "size": 13290,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0246_BITMAP_METALLIC_STARTPANELMOREPROGBACKGROUND_BM_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTPANELMOREPROGBACKGROUND_BMP",
+   1033
+  ],
+  "size": 1002,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0247_BITMAP_METALLIC_STARTPANELPLACESBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTPANELPLACESBACKGROUND_BMP",
+   1033
+  ],
+  "size": 2058,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0248_BITMAP_METALLIC_STARTPLACESSEPARATOR_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTPLACESSEPARATOR_BMP",
+   1033
+  ],
+  "size": 4202,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0249_BITMAP_METALLIC_STARTPROGRAMSSEPARATOR_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTPROGRAMSSEPARATOR_BMP",
+   1033
+  ],
+  "size": 1896,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0250_BITMAP_METALLIC_STARTUSERPANEL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STARTUSERPANEL_BMP",
+   1033
+  ],
+  "size": 1544,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0251_BITMAP_METALLIC_STATUSBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STATUSBACKGROUND_BMP",
+   1033
+  ],
+  "size": 1544,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0252_BITMAP_METALLIC_STATUSPANE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_STATUSPANE_BMP",
+   1033
+  ],
+  "size": 1544,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0253_BITMAP_METALLIC_TABBACKGROUND133_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TABBACKGROUND133_BMP",
+   1033
+  ],
+  "size": 9162,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0254_BITMAP_METALLIC_TABBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TABBACKGROUND_BMP",
+   1033
+  ],
+  "size": 13290,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0255_BITMAP_METALLIC_TABITEMBOTH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TABITEMBOTH_BMP",
+   1033
+  ],
+  "size": 1002,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0256_BITMAP_METALLIC_TABITEMLEFT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TABITEMLEFT_BMP",
+   1033
+  ],
+  "size": 2058,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0257_BITMAP_METALLIC_TABITEMRIGHT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TABITEMRIGHT_BMP",
+   1033
+  ],
+  "size": 4202,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0258_BITMAP_METALLIC_TABITEMTOPBOTH_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TABITEMTOPBOTH_BMP",
+   1033
+  ],
+  "size": 3402,
+  "magic": "280000006f000000"
+ },
+ {
+  "file": "0259_BITMAP_METALLIC_TABITEMTOPLEFT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TABITEMTOPLEFT_BMP",
+   1033
+  ],
+  "size": 3462,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0260_BITMAP_METALLIC_TABITEMTOPRIGHT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TABITEMTOPRIGHT_BMP",
+   1033
+  ],
+  "size": 3462,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0261_BITMAP_METALLIC_TABITEMTOP_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TABITEMTOP_BMP",
+   1033
+  ],
+  "size": 7098,
+  "magic": "280000006f000000"
+ },
+ {
+  "file": "0262_BITMAP_METALLIC_TABITEM_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TABITEM_BMP",
+   1033
+  ],
+  "size": 1404,
+  "magic": "2800000011000000"
+ },
+ {
+  "file": "0263_BITMAP_METALLIC_TABPANEEDGE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TABPANEEDGE_BMP",
+   1033
+  ],
+  "size": 4664,
+  "magic": "2800000018000000"
+ },
+ {
+  "file": "0264_BITMAP_METALLIC_TASKBANDBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDBACKGROUND_BMP",
+   1033
+  ],
+  "size": 402,
+  "magic": "280000000c000000"
+ },
+ {
+  "file": "0265_BITMAP_METALLIC_TASKBANDBUTTONNOEDGEVERTICAL_BM_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDBUTTONNOEDGEVERTICAL_BMP",
+   1033
+  ],
+  "size": 426,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0266_BITMAP_METALLIC_TASKBANDBUTTONNOEDGE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDBUTTONNOEDGE_BMP",
+   1033
+  ],
+  "size": 294,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0267_BITMAP_METALLIC_TASKBANDBUTTONVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDBUTTONVERTICAL_BMP",
+   1033
+  ],
+  "size": 1292,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0268_BITMAP_METALLIC_TASKBANDBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDBUTTON_BMP",
+   1033
+  ],
+  "size": 5448,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0269_BITMAP_METALLIC_TASKBANDFLASHBUTTONGROUPMENU_BM_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDFLASHBUTTONGROUPMENU_BMP",
+   1033
+  ],
+  "size": 8232,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0270_BITMAP_METALLIC_TASKBANDFLASHBUTTON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDFLASHBUTTON_BMP",
+   1033
+  ],
+  "size": 20040,
+  "magic": "2800000019000000"
+ },
+ {
+  "file": "0271_BITMAP_METALLIC_TASKBANDHOVER_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDHOVER_BMP",
+   1033
+  ],
+  "size": 376,
+  "magic": "2800000020000000"
+ },
+ {
+  "file": "0272_BITMAP_METALLIC_TASKBANDSCROLLARROWGLYPHS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDSCROLLARROWGLYPHS_BMP",
+   1033
+  ],
+  "size": 9162,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0273_BITMAP_METALLIC_TASKBANDSCROLLARROWS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDSCROLLARROWS_BMP",
+   1033
+  ],
+  "size": 13290,
+  "magic": "2800000017000000"
+ },
+ {
+  "file": "0274_BITMAP_METALLIC_TASKBANDSCROLLSHAFTHORIZONTAL_B_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDSCROLLSHAFTHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 1002,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0275_BITMAP_METALLIC_TASKBANDSCROLLSHAFTVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDSCROLLSHAFTVERTICAL_BMP",
+   1033
+  ],
+  "size": 2058,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0276_BITMAP_METALLIC_TASKBANDSCROLLTHUMBGRIPPERHORIZ_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDSCROLLTHUMBGRIPPERHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 4202,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0277_BITMAP_METALLIC_TASKBANDSCROLLTHUMBGRIPPERVERTI_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDSCROLLTHUMBGRIPPERVERTICAL_BMP",
+   1033
+  ],
+  "size": 1960,
+  "magic": "2800000007000000"
+ },
+ {
+  "file": "0278_BITMAP_METALLIC_TASKBANDSCROLLTHUMBHORIZONTAL_B_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDSCROLLTHUMBHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 2792,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0279_BITMAP_METALLIC_TASKBANDSCROLLTHUMBVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBANDSCROLLTHUMBVERTICAL_BMP",
+   1033
+  ],
+  "size": 14186,
+  "magic": "2800000011000000"
+ },
+ {
+  "file": "0280_BITMAP_METALLIC_TASKBARBACKGROUNDVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARBACKGROUNDVERTICAL_BMP",
+   1033
+  ],
+  "size": 2424,
+  "magic": "2800000011000000"
+ },
+ {
+  "file": "0281_BITMAP_METALLIC_TASKBARBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARBACKGROUND_BMP",
+   1033
+  ],
+  "size": 2424,
+  "magic": "2800000011000000"
+ },
+ {
+  "file": "0282_BITMAP_METALLIC_TASKBARCHEVRONVERT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARCHEVRONVERT_BMP",
+   1033
+  ],
+  "size": 810,
+  "magic": "2800000008000000"
+ },
+ {
+  "file": "0283_BITMAP_METALLIC_TASKBARCHEVRON_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARCHEVRON_BMP",
+   1033
+  ],
+  "size": 810,
+  "magic": "2800000008000000"
+ },
+ {
+  "file": "0284_BITMAP_METALLIC_TASKBARGRIPPERVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARGRIPPERVERTICAL_BMP",
+   1033
+  ],
+  "size": 4122,
+  "magic": "2800000016000000"
+ },
+ {
+  "file": "0285_BITMAP_METALLIC_TASKBARGRIPPER_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARGRIPPER_BMP",
+   1033
+  ],
+  "size": 4266,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0286_BITMAP_METALLIC_TASKBARSIZINGBARBOTTOM_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARSIZINGBARBOTTOM_BMP",
+   1033
+  ],
+  "size": 118,
+  "magic": "2800000005000000"
+ },
+ {
+  "file": "0287_BITMAP_METALLIC_TASKBARSIZINGBARLEFT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARSIZINGBARLEFT_BMP",
+   1033
+  ],
+  "size": 74,
+  "magic": "2800000008000000"
+ },
+ {
+  "file": "0288_BITMAP_METALLIC_TASKBARSIZINGBARRIGHT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARSIZINGBARRIGHT_BMP",
+   1033
+  ],
+  "size": 1104,
+  "magic": "2800000005000000"
+ },
+ {
+  "file": "0289_BITMAP_METALLIC_TASKBARSIZINGBARTOP_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARSIZINGBARTOP_BMP",
+   1033
+  ],
+  "size": 5448,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0290_BITMAP_METALLIC_TASKBARTRAYVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARTRAYVERTICAL_BMP",
+   1033
+  ],
+  "size": 1512,
+  "magic": "2800000007000000"
+ },
+ {
+  "file": "0291_BITMAP_METALLIC_TASKBARTRAY_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TASKBARTRAY_BMP",
+   1033
+  ],
+  "size": 506,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0292_BITMAP_METALLIC_TOOLBARBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TOOLBARBACKGROUND_BMP",
+   1033
+  ],
+  "size": 7642,
+  "magic": "2800000042000000"
+ },
+ {
+  "file": "0293_BITMAP_METALLIC_TOOLBARBUTTONSSPLITDROPDOWNGLYP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TOOLBARBUTTONSSPLITDROPDOWNGLYPH_BMP",
+   1033
+  ],
+  "size": 3402,
+  "magic": "280000006f000000"
+ },
+ {
+  "file": "0294_BITMAP_METALLIC_TOOLBARBUTTONSSPLITDROPDOWN_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TOOLBARBUTTONSSPLITDROPDOWN_BMP",
+   1033
+  ],
+  "size": 3462,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0295_BITMAP_METALLIC_TOOLBARBUTTONSSPLIT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TOOLBARBUTTONSSPLIT_BMP",
+   1033
+  ],
+  "size": 3462,
+  "magic": "2800000013000000"
+ },
+ {
+  "file": "0296_BITMAP_METALLIC_TOOLBARBUTTONS_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TOOLBARBUTTONS_BMP",
+   1033
+  ],
+  "size": 7098,
+  "magic": "280000006f000000"
+ },
+ {
+  "file": "0297_BITMAP_METALLIC_TOOLBARGRIPPERVERT_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TOOLBARGRIPPERVERT_BMP",
+   1033
+  ],
+  "size": 3114,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0298_BITMAP_METALLIC_TOOLBARGRIPPER_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TOOLBARGRIPPER_BMP",
+   1033
+  ],
+  "size": 3114,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0299_BITMAP_METALLIC_TRACKBARDOWN13_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARDOWN13_BMP",
+   1033
+  ],
+  "size": 3114,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0300_BITMAP_METALLIC_TRACKBARDOWN16_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARDOWN16_BMP",
+   1033
+  ],
+  "size": 3114,
+  "magic": "280000000f000000"
+ },
+ {
+  "file": "0301_BITMAP_METALLIC_TRACKBARDOWN25_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARDOWN25_BMP",
+   1033
+  ],
+  "size": 618,
+  "magic": "2800000007000000"
+ },
+ {
+  "file": "0302_BITMAP_METALLIC_TRACKBARHORIZONTAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 602,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0303_BITMAP_METALLIC_TRACKBARLEFT13_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARLEFT13_BMP",
+   1033
+  ],
+  "size": 602,
+  "magic": "2800000006000000"
+ },
+ {
+  "file": "0304_BITMAP_METALLIC_TRACKBARLEFT16_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARLEFT16_BMP",
+   1033
+  ],
+  "size": 618,
+  "magic": "2800000007000000"
+ },
+ {
+  "file": "0305_BITMAP_METALLIC_TRACKBARLEFT25_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARLEFT25_BMP",
+   1033
+  ],
+  "size": 29742,
+  "magic": "2800000063000000"
+ },
+ {
+  "file": "0306_BITMAP_METALLIC_TRACKBARRIGHT13_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARRIGHT13_BMP",
+   1033
+  ],
+  "size": 12186,
+  "magic": "28000000b8000000"
+ },
+ {
+  "file": "0307_BITMAP_METALLIC_TRACKBARRIGHT16_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARRIGHT16_BMP",
+   1033
+  ],
+  "size": 1088,
+  "magic": "2800000009000000"
+ },
+ {
+  "file": "0308_BITMAP_METALLIC_TRACKBARRIGHT25_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARRIGHT25_BMP",
+   1033
+  ],
+  "size": 6700,
+  "magic": "28000000b9000000"
+ },
+ {
+  "file": "0309_BITMAP_METALLIC_TRACKBARUP13_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARUP13_BMP",
+   1033
+  ],
+  "size": 186,
+  "magic": "2800000008000000"
+ },
+ {
+  "file": "0310_BITMAP_METALLIC_TRACKBARUP16_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARUP16_BMP",
+   1033
+  ],
+  "size": 11430,
+  "magic": "2800000061000000"
+ },
+ {
+  "file": "0311_BITMAP_METALLIC_TRACKBARUP25_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARUP25_BMP",
+   1033
+  ],
+  "size": 6952,
+  "magic": "2800000048000000"
+ },
+ {
+  "file": "0312_BITMAP_METALLIC_TRACKBARVERTICAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRACKBARVERTICAL_BMP",
+   1033
+  ],
+  "size": 5226,
+  "magic": "2800000048000000"
+ },
+ {
+  "file": "0313_BITMAP_METALLIC_TRAYCHEVRONHORIZONTALOPEN_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRAYCHEVRONHORIZONTALOPEN_BMP",
+   1033
+  ],
+  "size": 1914,
+  "magic": "280000009c000000"
+ },
+ {
+  "file": "0314_BITMAP_METALLIC_TRAYCHEVRONHORIZONTAL_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TRAYCHEVRONHORIZONTAL_BMP",
+   1033
+  ],
+  "size": 1576,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0315_BITMAP_METALLIC_TREEEXPANDCOLLAPSE10_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TREEEXPANDCOLLAPSE10_BMP",
+   1033
+  ],
+  "size": 1576,
+  "magic": "2800000010000000"
+ },
+ {
+  "file": "0316_BITMAP_METALLIC_TREEEXPANDCOLLAPSE15_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TREEEXPANDCOLLAPSE15_BMP",
+   1033
+  ],
+  "size": 66,
+  "magic": "2800000004000000"
+ },
+ {
+  "file": "0317_BITMAP_METALLIC_TREEEXPANDCOLLAPSE_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_TREEEXPANDCOLLAPSE_BMP",
+   1033
+  ],
+  "size": 3282,
+  "magic": "28000000b4000000"
+ },
+ {
+  "file": "0318_BITMAP_METALLIC_USERTILEBACKGROUND_BMP_1033.bin",
+  "type": 2,
+  "name_path": [
+   2,
+   "METALLIC_USERTILEBACKGROUND_BMP",
+   1033
+  ],
+  "size": 850,
+  "magic": "2800000086000000"
+ },
+ {
+  "file": "0319_STRING_63_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   63,
+   1033
+  ],
+  "size": 1416,
+  "magic": "28000000ac000000"
+ },
+ {
+  "file": "0320_STRING_126_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   126,
+   1033
+  ],
+  "size": 22722,
+  "magic": "2800000078000000"
+ },
+ {
+  "file": "0321_STRING_188_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   188,
+   1033
+  ],
+  "size": 3102,
+  "magic": "2800000044000000"
+ },
+ {
+  "file": "0322_STRING_251_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   251,
+   1033
+  ],
+  "size": 158,
+  "magic": "2800000003000000"
+ },
+ {
+  "file": "0323_STRING_313_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   313,
+   1033
+  ],
+  "size": 32810,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0324_STRING_376_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   376,
+   1033
+  ],
+  "size": 19242,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0325_STRING_377_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   377,
+   1033
+  ],
+  "size": 5082,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0326_STRING_378_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   378,
+   1033
+  ],
+  "size": 5082,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0327_STRING_379_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   379,
+   1033
+  ],
+  "size": 5082,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0328_STRING_380_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   380,
+   1033
+  ],
+  "size": 5082,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0329_STRING_381_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   381,
+   1033
+  ],
+  "size": 5082,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0330_STRING_382_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   382,
+   1033
+  ],
+  "size": 5082,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0331_STRING_383_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   383,
+   1033
+  ],
+  "size": 5082,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0332_STRING_384_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   384,
+   1033
+  ],
+  "size": 5082,
+  "magic": "2800000012000000"
+ },
+ {
+  "file": "0333_STRING_385_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   385,
+   1033
+  ],
+  "size": 6954,
+  "magic": "2800000030000000"
+ },
+ {
+  "file": "0334_STRING_386_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   386,
+   1033
+  ],
+  "size": 882,
+  "magic": "280000001c000000"
+ },
+ {
+  "file": "0335_STRING_387_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   387,
+   1033
+  ],
+  "size": 8874,
+  "magic": "2800000015000000"
+ },
+ {
+  "file": "0336_STRING_388_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   388,
+   1033
+  ],
+  "size": 6762,
+  "magic": "280000000d000000"
+ },
+ {
+  "file": "0337_STRING_389_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   389,
+   1033
+  ],
+  "size": 11634,
+  "magic": "280000001c000000"
+ },
+ {
+  "file": "0338_STRING_390_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   390,
+   1033
+  ],
+  "size": 13482,
+  "magic": "280000001a000000"
+ },
+ {
+  "file": "0339_STRING_391_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   391,
+   1033
+  ],
+  "size": 2158,
+  "magic": "280000001e000000"
+ },
+ {
+  "file": "0340_STRING_392_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   392,
+   1033
+  ],
+  "size": 2282,
+  "magic": "280000001a000000"
+ },
+ {
+  "file": "0341_STRING_393_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   393,
+   1033
+  ],
+  "size": 6390,
+  "magic": "280000001e000000"
+ },
+ {
+  "file": "0342_STRING_394_1033.bin",
+  "type": 6,
+  "name_path": [
+   6,
+   394,
+   1033
+  ],
+  "size": 5162,
+  "magic": "280000000a000000"
+ },
+ {
+  "file": "0343_PLUGPLAY_1_1033.bin",
+  "type": 16,
+  "name_path": [
+   16,
+   1,
+   1033
+  ],
+  "size": 14186,
+  "magic": "2800000011000000"
+ }
+]

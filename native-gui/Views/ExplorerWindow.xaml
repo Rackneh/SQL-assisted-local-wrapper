@@ -1,0 +1,67 @@
+<UserControl x:Class="DoryNative.Views.ExplorerWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="400" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="24"/>
+        </Grid.RowDefinitions>
+
+        <!-- Toolbar -->
+        <Border Grid.Row="0" Background="#ECE9D8" BorderBrush="#ACA899" BorderThickness="0,0,0,1">
+            <Grid Margin="4,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="◀ Back" Width="56" Height="22" Margin="2,0"
+                        Click="Back_Click" FontSize="10" FontFamily="Tahoma"/>
+                <Button Grid.Column="1" Content="Up" Width="40" Height="22" Margin="2,0"
+                        Click="Up_Click" FontSize="10" FontFamily="Tahoma"/>
+                <TextBox Grid.Column="2" x:Name="PathBox" Margin="4,0" FontSize="11"
+                         FontFamily="Consolas" VerticalContentAlignment="Center"
+                         KeyDown="PathBox_KeyDown"/>
+                <Button Grid.Column="3" Content="Go" Width="36" Height="22" Margin="2,0"
+                        Click="Go_Click" FontSize="10" FontFamily="Tahoma"/>
+            </Grid>
+        </Border>
+
+        <!-- Main area: tree + list -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Background="#F5F5F5" BorderBrush="#ACA899" BorderThickness="0,0,1,0">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <TreeView x:Name="DirTree" Background="Transparent" BorderThickness="0"
+                              SelectedItemChanged="DirTree_SelectedItemChanged"/>
+                </ScrollViewer>
+            </Border>
+
+            <Border Grid.Column="1" Background="White">
+                <ListView x:Name="FileList" Background="Transparent" BorderThickness="0"
+                          MouseDoubleClick="FileList_MouseDoubleClick">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Name" Width="220" DisplayMemberBinding="{Binding Name}"/>
+                            <GridViewColumn Header="Size" Width="80" DisplayMemberBinding="{Binding SizeText}"/>
+                            <GridViewColumn Header="Modified" Width="140" DisplayMemberBinding="{Binding ModifiedText}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Border>
+        </Grid>
+
+        <!-- Status bar -->
+        <Border Grid.Row="2" Background="#ECE9D8" BorderBrush="#ACA899" BorderThickness="0,1,0,0">
+            <TextBlock x:Name="StatusText" Text="Ready" FontSize="10" Foreground="#444444"
+                       VerticalAlignment="Center" Margin="6,0"/>
+        </Border>
+    </Grid>
+</UserControl>

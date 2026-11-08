@@ -1,0 +1,134 @@
+<Window x:Class="DoryNative.XpSim.LogonWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None" ResizeMode="NoResize" WindowState="Maximized"
+        Topmost="True" ShowInTaskbar="False" Background="#000000">
+    <Grid>
+        <!-- Welcome screen backdrop: blue gradient like real XP logon -->
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#001845" Offset="0"/>
+                <GradientStop Color="#004E98" Offset="0.55"/>
+                <GradientStop Color="#003A6C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+
+        <!-- Bottom hint bar -->
+        <TextBlock Grid.Row="0" Text="To begin, click your user name"
+                   Foreground="White" FontSize="13" FontWeight="Bold"
+                   VerticalAlignment="Bottom" Margin="30,0,0,10"
+                   FontFamily="Trebuchet MS"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Left: Windows logo + prompt -->
+            <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="40,0,0,0">
+                <Image x:Name="LogoImage" Width="190" Margin="0,0,0,18"/>
+                <TextBlock Text="To begin, click your user name"
+                           Foreground="White" FontSize="13" FontWeight="Bold"
+                           FontFamily="Trebuchet MS"/>
+            </StackPanel>
+
+            <Rectangle Grid.Column="1" Width="1" Fill="#5A7A9E" Margin="30,40"/>
+
+            <!-- Right: user cards -->
+            <StackPanel Grid.Column="2" VerticalAlignment="Center" Margin="0,0,60,0">
+                <Border x:Name="PrimaryCard" CornerRadius="6" Padding="14,10"
+                        Background="#3D5A80" BorderBrush="#7FA6D4" BorderThickness="1"
+                        Cursor="Hand" Width="330" Margin="0,0,0,14">
+                    <StackPanel Orientation="Horizontal">
+                        <Border x:Name="PrimaryAvatarBox" Width="48" Height="48"
+                                CornerRadius="3" ClipToBounds="True" Background="Black">
+                            <Image x:Name="PrimaryAvatar" Stretch="UniformToFill"/>
+                        </Border>
+                        <StackPanel Margin="12,0,0,0" VerticalAlignment="Center">
+                            <TextBlock x:Name="PrimaryName" Foreground="White" FontSize="16"
+                                       FontWeight="Bold" FontFamily="Trebuchet MS"/>
+                            <TextBlock x:Name="PrimarySub" Foreground="#C8DCF0" FontSize="11"
+                                       FontFamily="Trebuchet MS" Margin="0,2,0,0"/>
+                            <StackPanel x:Name="PwRow" Orientation="Horizontal" Margin="0,6,0,0" Visibility="Collapsed">
+                                <PasswordBox x:Name="PwInput" Width="140" FontSize="11"
+                                             Padding="4,2" Background="White" Foreground="Black"
+                                             BorderBrush="#716F64"/>
+                                <Button x:Name="PwSubmit" Content="➔" Width="26" Height="24"
+                                        Margin="6,0,0,0" Background="#E8EEF7" BorderBrush="#7F9DB9"
+                                        Cursor="Hand" FontSize="12"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <Border x:Name="GuestCard" CornerRadius="6" Padding="14,10"
+                        Background="#46628C" BorderBrush="#7FA6D4" BorderThickness="1"
+                        Cursor="Hand" Width="330" Opacity="0.75">
+                    <StackPanel Orientation="Horizontal">
+                        <Border Width="48" Height="48" CornerRadius="3" ClipToBounds="True" Background="Black">
+                            <Image x:Name="GuestAvatar" Stretch="UniformToFill"/>
+                        </Border>
+                        <StackPanel Margin="12,0,0,0" VerticalAlignment="Center">
+                            <TextBlock Text="Guest" Foreground="White" FontSize="16"
+                                       FontWeight="Bold" FontFamily="Trebuchet MS"/>
+                            <TextBlock Text="Guest Account" Foreground="#C8DCF0" FontSize="11"
+                                       FontFamily="Trebuchet MS" Margin="0,2,0,0"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <!-- Yellow post-it credentials note -->
+        <Border Grid.Row="1" x:Name="PostIt" HorizontalAlignment="Right"
+                VerticalAlignment="Top" Margin="0,90,140,0" Width="210"
+                Padding="12,10">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#FFF9C4" Offset="0"/>
+                    <GradientStop Color="#FFF176" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel>
+                <TextBlock Text="📌" FontSize="14" HorizontalAlignment="Right" Margin="0,-6,-4,0"/>
+                <TextBlock Text="Setup Credentials" FontWeight="Bold" FontSize="12"
+                           Foreground="#5A4A00" FontFamily="Trebuchet MS"/>
+                <TextBlock x:Name="PostItUser" FontSize="11" Foreground="#3A3200"
+                           FontFamily="Trebuchet MS" Margin="0,6,0,0" TextWrapping="Wrap"/>
+                <TextBlock x:Name="PostItPw" FontSize="11" Foreground="#3A3200"
+                           FontFamily="Trebuchet MS" TextWrapping="Wrap"/>
+                <TextBlock x:Name="PostItComp" FontSize="11" Foreground="#3A3200"
+                           FontFamily="Trebuchet MS" TextWrapping="Wrap"/>
+                <TextBlock Text="Credentials configured during Windows XP Setup."
+                           FontSize="9" Foreground="#7A6C20" FontStyle="Italic"
+                           FontFamily="Trebuchet MS" Margin="0,8,0,0" TextWrapping="Wrap"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Bottom bar: turn off + hint -->
+        <Grid Grid.Row="2">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="30,0,0,14">
+                <Button x:Name="TurnOffBtn" Background="Transparent" BorderThickness="0"
+                        Cursor="Hand" Padding="0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="⏻" FontSize="22" Foreground="White" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                        <TextBlock Text="Turn off computer" Foreground="White" FontSize="13"
+                                   FontFamily="Trebuchet MS" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <TextBlock Text="After you log on, you can add or change accounts in Control Panel."
+                       Foreground="White" FontSize="11" Opacity="0.85"
+                       HorizontalAlignment="Right" VerticalAlignment="Center"
+                       Margin="0,0,30,14" FontFamily="Trebuchet MS"/>
+        </Grid>
+    </Grid>
+</Window>

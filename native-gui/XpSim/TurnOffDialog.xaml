@@ -1,0 +1,80 @@
+<Window x:Class="DoryNative.XpSim.TurnOffDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None" ResizeMode="NoResize" SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen" Topmost="True" ShowInTaskbar="False"
+        AllowsTransparency="True" Background="Transparent">
+    <Border CornerRadius="8" Padding="0">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#2456A6" Offset="0"/>
+                <GradientStop Color="#163E75" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <StackPanel Width="330">
+            <!-- Title bar -->
+            <Border CornerRadius="8,8,0,0" Padding="12,8">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#3A6EA5" Offset="0"/>
+                        <GradientStop Color="#1E4E89" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Windows" Foreground="White" FontSize="15" FontWeight="Bold"
+                               FontFamily="Trebuchet MS" VerticalAlignment="Center"/>
+                    <TextBlock Text="XP" Foreground="#FF8C00" FontSize="15" FontWeight="Bold"
+                               FontFamily="Trebuchet MS" VerticalAlignment="Center" Margin="2,0,0,0"/>
+                    <TextBlock Text="Turn off computer" Foreground="White" FontSize="13"
+                               FontWeight="Bold" FontFamily="Trebuchet MS"
+                               VerticalAlignment="Center" Margin="14,0,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Action buttons -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+                        Margin="20,18,20,10">
+                <Button x:Name="StandByBtn" Background="Transparent" BorderThickness="0"
+                        Cursor="Hand" Padding="10,4" Margin="0,0,8,0">
+                    <StackPanel>
+                        <Image x:Name="StandByImg" Width="42" Height="42"
+                               HorizontalAlignment="Center" Stretch="Uniform"/>
+                        <TextBlock Text="Stand By" Foreground="White" FontSize="11"
+                                   HorizontalAlignment="Center" FontFamily="Trebuchet MS"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="TurnOffBtn" Background="Transparent" BorderThickness="0"
+                        Cursor="Hand" Padding="10,4" Margin="0,0,8,0">
+                    <StackPanel>
+                        <Image x:Name="TurnOffImg" Width="42" Height="42"
+                               HorizontalAlignment="Center" Stretch="Uniform"/>
+                        <TextBlock Text="Turn Off" Foreground="White" FontSize="11"
+                                   HorizontalAlignment="Center" FontFamily="Trebuchet MS"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="RestartBtn" Background="Transparent" BorderThickness="0"
+                        Cursor="Hand" Padding="10,4">
+                    <StackPanel>
+                        <Image x:Name="RestartImg" Width="42" Height="42"
+                               HorizontalAlignment="Center" Stretch="Uniform"/>
+                        <TextBlock Text="Restart" Foreground="White" FontSize="11"
+                                   HorizontalAlignment="Center" FontFamily="Trebuchet MS"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+            <!-- Footer -->
+            <Border CornerRadius="0,0,8,8" Padding="12,8">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#1E4E89" Offset="0"/>
+                        <GradientStop Color="#163E75" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Button x:Name="CancelBtn" Content="Cancel" Width="76" Height="23"
+                        HorizontalAlignment="Right" Background="#E8EEF7"
+                        BorderBrush="#7F9DB9" Cursor="Hand" FontSize="11"/>
+            </Border>
+        </StackPanel>
+    </Border>
+</Window>

@@ -1,0 +1,363 @@
+<Window x:Class="WLMRevivalV2Desktop.Views.MainWindowLive"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Windows Live Messenger"
+        Height="660" Width="340"
+        MinWidth="300" MinHeight="480"
+        FontFamily="Segoe UI"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="CanResizeWithGrip"
+        WindowStartupLocation="CenterScreen"
+        Icon="/Assets/Icons/app.ico">
+
+    <Window.Resources>
+        <!-- Borderless personal-message editor (inside the speech bubble) -->
+        <Style x:Key="PmBox" TargetType="TextBox">
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Foreground" Value="#FF444444"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <!-- Chromeless status dropdown: "(Available) v" next to the name -->
+        <Style x:Key="HeaderStatusCombo" TargetType="ComboBox">
+            <Setter Property="Foreground" Value="#FF3B3B3B"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <ToggleButton x:Name="toggle" Focusable="False" ClickMode="Press"
+                                          IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}">
+                                <ToggleButton.Template>
+                                    <ControlTemplate TargetType="ToggleButton">
+                                        <Border x:Name="bd" Background="Transparent" CornerRadius="2" Padding="2,0">
+                                            <StackPanel Orientation="Horizontal">
+                                                <ContentPresenter Content="{Binding SelectionBoxItem, RelativeSource={RelativeSource AncestorType=ComboBox}}"
+                                                                  VerticalAlignment="Center"
+                                                                  TextBlock.Foreground="#FF3B3B3B"/>
+                                                <Path Data="M0,0 L7,0 L3.5,4.5 Z" Fill="#FF6B7B8A" Margin="4,2,0,0"
+                                                      VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="bd" Property="Background" Value="#FFE9F2FA"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </ToggleButton.Template>
+                            </ToggleButton>
+                            <Popup IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom"
+                                   AllowsTransparency="True" Focusable="False" PopupAnimation="Fade">
+                                <Border Background="White" BorderBrush="#FFA8BCCE" BorderThickness="1"
+                                        CornerRadius="2" MinWidth="150">
+                                    <ItemsPresenter/>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Flat Wave-4 group header: dark grey text + small grey triangle -->
+        <Style x:Key="GroupExpanderLive" TargetType="Expander">
+            <Setter Property="IsExpanded" Value="True"/>
+            <Setter Property="Foreground" Value="#FF555555"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Expander">
+                        <StackPanel>
+                            <Border Padding="8,5,6,3" Background="Transparent">
+                                <ToggleButton IsChecked="{Binding IsExpanded, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
+                                              HorizontalAlignment="Stretch" Cursor="Hand">
+                                    <ToggleButton.Template>
+                                        <ControlTemplate TargetType="ToggleButton">
+                                            <Border Background="Transparent">
+                                                <StackPanel Orientation="Horizontal">
+                                                    <Path x:Name="arr" Data="M0,0 L7,0 L3.5,5 Z" Fill="#FF8A8A8A"
+                                                          VerticalAlignment="Center" Margin="2,1,7,0"/>
+                                                    <ContentPresenter Content="{TemplateBinding Content}" VerticalAlignment="Center"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsChecked" Value="False">
+                                                    <Setter TargetName="arr" Property="Data" Value="M0,0 L0,7 L5,3.5 Z"/>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </ToggleButton.Template>
+                                    <ContentPresenter Content="{TemplateBinding Header}"/>
+                                </ToggleButton>
+                            </Border>
+                            <ContentPresenter x:Name="body" Visibility="Visible"/>
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsExpanded" Value="False">
+                                <Setter TargetName="body" Property="Visibility" Value="Collapsed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Soft flat hover/selection, Wave-4 style -->
+        <Style TargetType="ListBoxItem">
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Padding" Value="6,2"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem">
+                        <Border x:Name="bd" BorderThickness="1" BorderBrush="Transparent"
+                                Background="Transparent" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bd" Property="Background" Value="#FFF2F7FC"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="bd" Property="Background" Value="#FFE4EFF9"/>
+                                <Setter TargetName="bd" Property="BorderBrush" Value="#FFBCD6EC"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <!-- ===== Flat Wave-4 window frame ===== -->
+    <Border CornerRadius="4" Background="White" BorderThickness="1" BorderBrush="#FF8FA8BE"
+            SnapsToDevicePixels="True">
+        <Border.Effect>
+            <DropShadowEffect Color="#66000000" BlurRadius="10" ShadowDepth="0" Opacity="0.5"/>
+        </Border.Effect>
+        <Border CornerRadius="3" ClipToBounds="True">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- ===== Banner background spanning header + search ===== -->
+                <Border Grid.Row="0" x:Name="BannerBackground" IsHitTestVisible="False">
+                    <Border.Background>
+                        <ImageBrush ImageSource="{DynamicResource WlmBannerImage}" Stretch="UniformToFill" AlignmentY="Top"/>
+                    </Border.Background>
+                </Border>
+
+                <!-- ===== Header: sky gradient, DP + speech-bubble PM, identity row ===== -->
+                <Grid Grid.Row="0" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="{DynamicResource WlmBannerImage}" Stretch="UniformToFill" AlignmentY="Top"/>
+                    </Grid.Background>
+                    <!-- hidden scene image, kept for shared code paths -->
+                    <Image x:Name="HeaderSceneImage" Visibility="Collapsed" Stretch="UniformToFill" VerticalAlignment="Top" Height="108"/>
+
+                    <StackPanel>
+                        <!-- caption buttons -->
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,3,4,0">
+                            <Button Style="{StaticResource WlmCaptionButton}" ToolTip="Minimize" Click="Minimize_Click">
+                                <Path Data="M0,5 L9,5" Stroke="#FF44586B" StrokeThickness="1.6"/>
+                            </Button>
+                            <Button Style="{StaticResource WlmCaptionButton}" ToolTip="Maximize" Click="Maximize_Click" Margin="2,0,0,0">
+                                <Path Data="M0,0 L9,0 L9,8 L0,8 Z" Stroke="#FF44586B" StrokeThickness="1.3" Fill="Transparent"/>
+                            </Button>
+                            <Button Style="{StaticResource WlmCaptionCloseButton}" ToolTip="Close" Click="Close_Click" Margin="2,0,0,0">
+                                <Path Data="M0,0 L9,9 M9,0 L0,9" Stroke="#FF44586B" StrokeThickness="1.6"/>
+                            </Button>
+                        </StackPanel>
+
+                        <!-- DP + personal-message speech bubble -->
+                        <Grid Margin="10,0,10,6">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" Width="54" Height="54" VerticalAlignment="Top">
+                                <Image x:Name="HeaderStatusFrame" Source="/Assets/wlm/status_frame_online_small.png"
+                                       Stretch="Fill" Panel.ZIndex="0" Margin="-13,-13,-12,-9"/>
+                                <Border Width="54" Height="52" CornerRadius="2" Panel.ZIndex="1"
+                                        HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Border.Clip>
+                                        <RectangleGeometry Rect="0,0,64,64" RadiusX="2" RadiusY="2"/>
+                                    </Border.Clip>
+                                    <Image x:Name="HeaderTile" Source="/Assets/wlm/usertile_default.png" Stretch="UniformToFill"
+                                           Cursor="Hand" MouseLeftButtonDown="HeaderTile_MouseLeftButtonDown" RenderTransformOrigin="0.509,0.495" Margin="2,0,3,5"/>
+                                </Border>
+                            </Grid>
+                            <Border Grid.Column="1" Background="White" BorderBrush="#FFBFD3E6" BorderThickness="1"
+                                    CornerRadius="5" Padding="8,5" Margin="8,2,0,0" VerticalAlignment="Top" MinHeight="38">
+                                <TextBox x:Name="PersonalMessageBox" Style="{StaticResource PmBox}"
+                                         Text="Share a quick message"
+                                         KeyDown="PersonalMessageBox_KeyDown" LostFocus="PersonalMessageBox_LostFocus"/>
+                            </Border>
+                        </Grid>
+
+                        <!-- identity row: "Name (Available) v" + Inbox / add / layout -->
+                        <Grid Margin="10,0,8,6">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Orientation="Horizontal">
+                                <TextBlock x:Name="UserNameText" Text="Not Logged In" FontWeight="SemiBold" FontSize="13"
+                                           Foreground="#FF3B3B3B" VerticalAlignment="Center"/>
+                                <ComboBox x:Name="StatusCombo" Style="{StaticResource HeaderStatusCombo}"
+                                          SelectedIndex="0" Margin="5,1,0,0" VerticalAlignment="Center"
+                                          SelectionChanged="StatusCombo_SelectionChanged">
+                                    <ComboBoxItem Content="(Available)"/>
+                                    <ComboBoxItem Content="(Busy)"/>
+                                    <ComboBoxItem Content="(Away)"/>
+                                    <ComboBoxItem Content="(Appear offline)"/>
+                                    <ComboBoxItem IsEnabled="False" Height="7" Padding="0">
+                                        <Border Height="1" Background="{DynamicResource WlmBodyTintBrush}" Margin="2,3,2,0"/>
+                                    </ComboBoxItem>
+                                    <ComboBoxItem Content="Sign out"/>
+                                </ComboBox>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                <Button Style="{StaticResource WlmIconButton}" ToolTip="Inbox" Click="Mail_Click">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Assets/wlm/mail.png" Width="18" Height="13"/>
+                                        <TextBlock Text="Inbox" FontSize="11" Foreground="#FF3B3B3B" Margin="3,0,0,0"
+                                                   VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button Style="{StaticResource WlmIconButton}" ToolTip="Add a contact" Click="AddContact_Click">
+                                    <Image Source="/Assets/wlm/add_contact.png" Width="22" Height="16"/>
+                                </Button>
+                                <Button Style="{StaticResource WlmIconButton}" ToolTip="Change background and color scheme" Click="Scene_Click">
+                                    <Image Source="/Assets/wlm/select_background.png" Width="18" Height="16"/>
+                                </Button>
+                                <Button Style="{StaticResource WlmIconButton}" ToolTip="Options and layout" Click="Layout_Click">
+                                    <Image Source="/Assets/wlm/layout_toggle.png" Width="18" Height="16"/>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+
+                <!-- ===== Search ===== -->
+                <Border Grid.Row="1" Background="{DynamicResource WlmBodyTintBrush}" Padding="10,2,10,8">
+                    <Border Background="White" CornerRadius="2" BorderThickness="1" BorderBrush="{DynamicResource WlmBodyTintBrush}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="SearchBox" Grid.Column="0" BorderThickness="0" Background="Transparent"
+                                     VerticalContentAlignment="Center" Height="24" FontSize="12" Margin="6,0,0,0"
+                                     TextChanged="SearchBox_TextChanged"/>
+                            <TextBlock Grid.Column="0" Text="Search contacts or the web" FontSize="12"
+                                       Foreground="#FF9AA7B3" Margin="8,0,0,0" VerticalAlignment="Center"
+                                       IsHitTestVisible="False" x:Name="SearchHint"/>
+                            <Image Grid.Column="1" Source="/Assets/wlm/search.png" Width="13" Height="13"
+                                   Margin="4,0,7,0" VerticalAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                </Border>
+
+                <!-- ===== Colour-scheme background behind contact list (always visible in Live skin) ===== -->
+                <Border Grid.Row="2" x:Name="ContactListColorSchemeBackground" IsHitTestVisible="False">
+                    <Border.Background>
+                        <ImageBrush ImageSource="{DynamicResource WlmBannerImage}" Stretch="UniformToFill" AlignmentY="Top"/>
+                    </Border.Background>
+                </Border>
+
+                <!-- ===== Contact groups ===== -->
+                <Border Grid.Row="2" x:Name="ContactListBackground" Background="Transparent">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <Expander Style="{StaticResource GroupExpanderLive}">
+                                <Expander.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Favorites" FontWeight="SemiBold" FontSize="12" Foreground="#FF555555"/>
+                                        <TextBlock x:Name="FavoritesCount" Text="" FontSize="11" Margin="5,0,0,0" Foreground="#FF9AA7B3"/>
+                                    </StackPanel>
+                                </Expander.Header>
+                                <ListBox x:Name="FavoritesList" BorderThickness="0" Background="Transparent"
+                                         HorizontalContentAlignment="Stretch"
+                                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                         MouseDoubleClick="ContactList_MouseDoubleClick"/>
+                            </Expander>
+
+                            <Expander x:Name="GroupsExpander" Style="{StaticResource GroupExpanderLive}" IsExpanded="True">
+                                <Expander.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Groups" FontWeight="SemiBold" FontSize="12" Foreground="#FF555555"/>
+                                        <TextBlock x:Name="GroupsCount" Text="" FontSize="11" Margin="5,0,0,0" Foreground="#FF9AA7B3"/>
+                                    </StackPanel>
+                                </Expander.Header>
+                                <StackPanel>
+                                    <StackPanel x:Name="GroupsPanel"/>
+                                    <Border Padding="22,2,8,6">
+                                        <TextBlock TextWrapping="Wrap" FontSize="11" Foreground="#FF9AA7B3">
+                                            <Run Text="Create a group "/><Hyperlink Click="CreateGroup_Click" Foreground="#FF2D6BA8" TextDecorations="{x:Null}">to communicate</Hyperlink><Run Text=" and share with the people you choose."/>
+                                        </TextBlock>
+                                    </Border>
+                                </StackPanel>
+                            </Expander>
+
+                            <Expander Style="{StaticResource GroupExpanderLive}" IsExpanded="True">
+                                <Expander.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Available" FontWeight="SemiBold" FontSize="12" Foreground="#FF555555"/>
+                                        <TextBlock x:Name="AvailableCount" Text="" FontSize="11" Margin="5,0,0,0" Foreground="#FF9AA7B3"/>
+                                    </StackPanel>
+                                </Expander.Header>
+                                <ListBox x:Name="AvailableList" BorderThickness="0" Background="Transparent"
+                                         HorizontalContentAlignment="Stretch"
+                                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                         MouseDoubleClick="ContactList_MouseDoubleClick"/>
+                            </Expander>
+
+                            <Expander Style="{StaticResource GroupExpanderLive}" IsExpanded="False">
+                                <Expander.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Offline" FontWeight="SemiBold" FontSize="12" Foreground="#FF555555"/>
+                                        <TextBlock x:Name="OfflineCount" Text="" FontSize="11" Margin="5,0,0,0" Foreground="#FF9AA7B3"/>
+                                    </StackPanel>
+                                </Expander.Header>
+                                <ListBox x:Name="OfflineList" BorderThickness="0" Background="Transparent"
+                                         HorizontalContentAlignment="Stretch"
+                                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                         MouseDoubleClick="ContactList_MouseDoubleClick"/>
+                            </Expander>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Border>
+
+                <!-- ===== Social strip + connection ===== -->
+                <Border Grid.Row="3" Background="White" BorderBrush="#FFE3EDF6" BorderThickness="0,1,0,0" Padding="8,3">
+                    <Grid>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                            <Image Source="/Assets/wlm/wlm_logo.png" Width="16" Height="16" Margin="0,0,6,0"/>
+                            <Image Source="/Assets/wlm/mail.png" Width="18" Height="13" Margin="0,0,6,0" VerticalAlignment="Center"/>
+                            <Image Source="/Assets/wlm/wlm_people.png" Width="16" Height="16"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                            <TextBlock Text="Connected to " FontSize="10" Foreground="#FF8A99A8"/>
+                            <TextBlock x:Name="ConnectionStatus" Text="Disconnected" FontSize="10" Foreground="#FF5A6B7B"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <!-- ===== Black ad strip ===== -->
+            </Grid>
+        </Border>
+    </Border>
+</Window>

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>DoryNative</AssemblyName>
+    <RootNamespace>DoryNative</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.14" />
+    <PackageReference Include="System.Text.Json" Version="10.0.14" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="9.0.0" />
+  </ItemGroup>
+
+  <!-- WLM 2009 image assets compiled into the assembly so pack URIs resolve.
+       Winks, sounds, usertiles, emoticons and scenes are copied to output instead. -->
+  <ItemGroup>
+    <Resource Include="Assets\wlm\**\*" Exclude="Assets\wlm\winks\**\*;Assets\wlm\sounds\**\*;Assets\wlm\usertiles\**\*;Assets\wlm\emoticons\**\*;Assets\wlm\scenes\**\*" />
+    <Content Include="Assets\wlm\sounds\**\*;Assets\wlm\usertiles\**\*;Assets\wlm\winks\**\*;Assets\wlm\emoticons\**\*;Assets\wlm\scenes\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Icons\**\*;Assets\installer\**\*;Assets\xp_assets\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,42 @@
+<UserControl x:Class="DoryNative.Views.CalcWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#ECE9D8">
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Display -->
+        <TextBox x:Name="Display" Grid.Row="0" IsReadOnly="True" Text="0"
+                 TextAlignment="Right" FontSize="20" FontFamily="Courier New"
+                 Background="White" BorderBrush="#7F9DB9" Padding="6,4"
+                 Margin="0,0,0,8"/>
+        <!-- Buttons -->
+        <UniformGrid Grid.Row="1" Columns="5" Rows="4">
+            <Button Content="Back" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="back"/>
+            <Button Content="CE" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="ce"/>
+            <Button Content="C" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="c"/>
+            <Button Content="±" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="neg"/>
+            <Button Content="√" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="sqrt"/>
+            <Button Content="7" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="7"/>
+            <Button Content="8" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="8"/>
+            <Button Content="9" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="9"/>
+            <Button Content="/" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="/"/>
+            <Button Content="%" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="%"/>
+            <Button Content="4" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="4"/>
+            <Button Content="5" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="5"/>
+            <Button Content="6" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="6"/>
+            <Button Content="*" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="*"/>
+            <Button Content="1/x" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="inv"/>
+            <Button Content="1" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="1"/>
+            <Button Content="2" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="2"/>
+            <Button Content="3" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="3"/>
+            <Button Content="-" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="-"/>
+            <Button Content="0" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="0" Grid.ColumnSpan="2"/>
+            <Button Content="." Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="."/>
+            <Button Content="+" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="+"/>
+            <Button Content="=" Style="{StaticResource XpButtonStyle}" Click="Btn_Click" Tag="=" Grid.RowSpan="2"/>
+        </UniformGrid>
+    </Grid>
+</UserControl>

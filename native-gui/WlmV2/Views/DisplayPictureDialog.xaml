@@ -1,0 +1,144 @@
+<Window x:Class="WLMRevivalV2Desktop.Views.DisplayPictureDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Picture" Height="520" Width="520"
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        FontFamily="Segoe UI">
+
+    <Window.Resources>
+        <Style x:Key="WlmDialogButton" TargetType="Button">
+            <Setter Property="Height" Value="26"/>
+            <Setter Property="Padding" Value="16,0"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="bd" CornerRadius="3" BorderThickness="1"
+                                BorderBrush="#FF8CA8C4">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#FFFCFEFF" Offset="0"/>
+                                    <GradientStop Color="#FFEDF3F9" Offset="0.5"/>
+                                    <GradientStop Color="#FFDBE7F2" Offset="0.5"/>
+                                    <GradientStop Color="#FFD0DEEC" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"
+                                              Margin="{TemplateBinding Padding}">
+                                <ContentPresenter.Resources>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="Foreground" Value="#FF1A1A1A"/>
+                                    </Style>
+                                </ContentPresenter.Resources>
+                            </ContentPresenter>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bd" Property="BorderBrush" Value="#FF4F8CC9"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="bd" Property="Background" Value="#FFD0DEEC"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Border CornerRadius="7" Background="White" BorderThickness="1" BorderBrush="#FF5B86B0"
+            SnapsToDevicePixels="True">
+        <Border.Effect>
+            <DropShadowEffect Color="#88000000" BlurRadius="12" ShadowDepth="0" Opacity="0.5"/>
+        </Border.Effect>
+        <Border CornerRadius="6" ClipToBounds="True">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Title bar -->
+                <Grid Grid.Row="0" Height="29" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+                    <Image Source="/Assets/wlm/background.jpg" Stretch="UniformToFill" VerticalAlignment="Top"/>
+                    <Rectangle Fill="{StaticResource WlmGlassSheenBrush}"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="8,0">
+                        <Image Source="/Assets/wlm/wlm_people.png" Width="16" Height="16" Margin="0,0,6,0"/>
+                        <TextBlock Text="Picture" Foreground="#FF1C3E63" FontSize="12"
+                                   VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Button Style="{StaticResource WlmCaptionCloseButton}" ToolTip="Close" Click="Close_Click"
+                            HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,3,4,0">
+                        <Path Data="M0,0 L9,9 M9,0 L0,9" Stroke="#FF1C3E63" StrokeThickness="1.6"/>
+                    </Button>
+                </Grid>
+
+                <!-- Content -->
+                <Grid Grid.Row="1" Margin="15">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Left: Picture grid -->
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="Select a picture" FontSize="14" FontWeight="Bold"
+                                   Foreground="#FF1A1A1A" Margin="0,0,0,4"/>
+                        <TextBlock Text="Choose how you want to appear on Windows Live."
+                                   FontSize="11" Foreground="#FF5A6B7B" Margin="0,0,0,10"/>
+
+                        <TextBlock Text="Pictures" FontSize="12" FontWeight="SemiBold"
+                                   Foreground="#FF1A1A1A" Margin="0,0,0,8"/>
+
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" Height="280">
+                            <WrapPanel x:Name="PicturesPanel" ItemWidth="64" ItemHeight="64">
+                                <!-- Default pictures will be added in code -->
+                            </WrapPanel>
+                        </ScrollViewer>
+
+                        <TextBlock Text="Featured pictures" FontSize="12" FontWeight="SemiBold"
+                                   Foreground="#FF1A1A1A" Margin="0,10,0,8"/>
+                        <WrapPanel x:Name="FeaturedPicturesPanel" ItemWidth="48" ItemHeight="48">
+                            <!-- Featured pictures will be added in code -->
+                        </WrapPanel>
+                    </StackPanel>
+
+                    <!-- Right: Preview + buttons -->
+                    <StackPanel Grid.Column="1" Margin="15,0,0,0" Width="140">
+                        <Border Width="96" Height="96" BorderBrush="#FFB8C8D8" BorderThickness="1"
+                                Background="#FFF4F8FC" Margin="0,0,0,15">
+                            <Image x:Name="PreviewImage" Source="/Assets/wlm/usertile_default.png"
+                                   Stretch="Uniform" Margin="4"/>
+                        </Border>
+
+                        <Button Content="Webcam picture..." Style="{StaticResource WlmDialogButton}"
+                                Margin="0,0,0,6" Height="24"/>
+                        <Button Content="Dynamic picture..." Style="{StaticResource WlmDialogButton}"
+                                Margin="0,0,0,6" Height="24"/>
+                        <Button Content="Browse..." Style="{StaticResource WlmDialogButton}"
+                                Margin="0,0,0,6" Height="24" Click="Browse_Click"/>
+                        <Button Content="Remove" Style="{StaticResource WlmDialogButton}"
+                                Margin="0,0,0,6" Height="24" Click="Remove_Click"/>
+                        <Button Content="Modify..." Style="{StaticResource WlmDialogButton}"
+                                Margin="0,0,0,6" Height="24" IsEnabled="False"/>
+                    </StackPanel>
+                </Grid>
+
+                <!-- Buttons -->
+                <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right"
+                            Margin="0,0,15,15">
+                    <Button Content="OK" Click="OkButton_Click"
+                             Style="{StaticResource WlmDialogButton}" Margin="0,0,8,0"/>
+                    <Button Content="Close" Click="CloseButton_Click"
+                             Style="{StaticResource WlmDialogButton}"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

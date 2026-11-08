@@ -1,0 +1,50 @@
+<UserControl x:Class="DoryNative.Views.TaskMgrControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#ECE9D8">
+    <DockPanel>
+        <Border DockPanel.Dock="Top" Background="#ECE9D8" BorderBrush="#716F64" BorderThickness="0,0,0,1" Padding="6,3">
+            <WrapPanel>
+                <RadioButton x:Name="TabApps" Content="Applications" IsChecked="True" Margin="6,2" Checked="Tab_Changed"/>
+                <RadioButton x:Name="TabProcs" Content="Processes" Margin="6,2" Checked="Tab_Changed"/>
+                <RadioButton x:Name="TabPerf" Content="Performance" Margin="6,2" Checked="Tab_Changed"/>
+            </WrapPanel>
+        </Border>
+        <Border DockPanel.Dock="Bottom" Background="#ECE9D8" BorderBrush="#716F64" BorderThickness="0,1,0,0" Padding="6,3">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="End Task" Style="{StaticResource XpButtonStyle}" Margin="4,0" Padding="10,2" FontSize="10" Click="EndTask_Click"/>
+                <Button Content="Switch To" Style="{StaticResource XpButtonStyle}" Margin="4,0" Padding="10,2" FontSize="10"/>
+                <Button Content="New Task..." Style="{StaticResource XpButtonStyle}" Margin="4,0" Padding="10,2" FontSize="10" Click="NewTask_Click"/>
+            </StackPanel>
+        </Border>
+        <Grid Margin="6">
+            <DataGrid x:Name="AppsGrid" AutoGenerateColumns="False" IsReadOnly="True" GridLinesVisibility="Horizontal"
+                      Background="White" BorderBrush="#ACA899" HeadersVisibility="Column" FontSize="11">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Task" Binding="{Binding Name}" Width="*"/>
+                    <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="90"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid x:Name="ProcsGrid" AutoGenerateColumns="False" IsReadOnly="True" Visibility="Collapsed"
+                      GridLinesVisibility="Horizontal" Background="White" BorderBrush="#ACA899"
+                      HeadersVisibility="Column" FontSize="11">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Image Name" Binding="{Binding Name}" Width="*"/>
+                    <DataGridTextColumn Header="PID" Binding="{Binding Pid}" Width="60"/>
+                    <DataGridTextColumn Header="CPU" Binding="{Binding Cpu}" Width="70"/>
+                    <DataGridTextColumn Header="Mem Usage" Binding="{Binding Mem}" Width="90"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel x:Name="PerfPanel" Visibility="Collapsed">
+                <TextBlock Text="CPU Usage" FontSize="11" FontWeight="Bold" Margin="0,0,0,4"/>
+                <Border Height="60" Background="#0A0D14" BorderBrush="#263347" BorderThickness="1" Margin="0,0,0,10">
+                    <Polyline x:Name="CpuGraph" Stroke="#76B900" StrokeThickness="1.5"/>
+                </Border>
+                <TextBlock Text="Physical Memory (K)" FontSize="11" FontWeight="Bold" Margin="0,0,0,4"/>
+                <Border Height="60" Background="#0A0D14" BorderBrush="#263347" BorderThickness="1">
+                    <Polyline x:Name="MemGraph" Stroke="#00E5FF" StrokeThickness="1.5"/>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</UserControl>

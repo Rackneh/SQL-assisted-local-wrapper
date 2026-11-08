@@ -1,0 +1,35 @@
+{
+  "opencode": {
+    "provider": "openai",
+    "name": "NVIDIA Dory 1.0 4B",
+    "model": "dory",
+    "baseURL": "http://127.0.0.1:8080/v1",
+    "lanBaseURL": "http://192.168.178.24:8080/v1",
+    "apiKey": "dory-a5118c2b008b1ebe80793733a7aa48ee",
+    "contextLength": 32768,
+    "temperature": 1.0,
+    "topP": 0.95,
+    "supportsTools": true,
+    "capabilities": {
+      "tools": true,
+      "toolCalling": true,
+      "streaming": true,
+      "reasoning": true
+    }
+  },
+  "continue_dev_snippet": {
+    "title": "Dory 4B (Local)",
+    "provider": "openai",
+    "model": "dory",
+    "apiBase": "http://127.0.0.1:8080/v1",
+    "apiKey": "dory-a5118c2b008b1ebe80793733a7aa48ee",
+    "contextLength": 32768,
+    "capabilities": {
+      "tools": true
+    }
+  },
+  "environment_variables": {
+    "OPENAI_BASE_URL": "http://127.0.0.1:8080/v1",
+    "OPENAI_API_KEY": "dory-a5118c2b008b1ebe80793733a7aa48ee"
+  }
+}

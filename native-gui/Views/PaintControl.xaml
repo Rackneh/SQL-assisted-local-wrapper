@@ -1,0 +1,39 @@
+<UserControl x:Class="DoryNative.Views.PaintControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#ECE9D8">
+    <DockPanel>
+        <Border DockPanel.Dock="Top" Background="#ECE9D8" BorderBrush="#716F64" BorderThickness="0,0,0,1" Padding="4">
+            <WrapPanel>
+                <Button Content="Pencil" Style="{StaticResource XpButtonStyle}" Margin="2" Padding="8,2" FontSize="10" Click="ToolPencil_Click"/>
+                <Button Content="Brush" Style="{StaticResource XpButtonStyle}" Margin="2" Padding="8,2" FontSize="10" Click="ToolBrush_Click"/>
+                <Button Content="Eraser" Style="{StaticResource XpButtonStyle}" Margin="2" Padding="8,2" FontSize="10" Click="ToolEraser_Click"/>
+                <Button Content="Line" Style="{StaticResource XpButtonStyle}" Margin="2" Padding="8,2" FontSize="10" Click="ToolLine_Click"/>
+                <Button Content="Rect" Style="{StaticResource XpButtonStyle}" Margin="2" Padding="8,2" FontSize="10" Click="ToolRect_Click"/>
+                <Button Content="Ellipse" Style="{StaticResource XpButtonStyle}" Margin="2" Padding="8,2" FontSize="10" Click="ToolEllipse_Click"/>
+                <Button Content="Fill" Style="{StaticResource XpButtonStyle}" Margin="2" Padding="8,2" FontSize="10" Click="ToolFill_Click"/>
+                <Button Content="Clear" Style="{StaticResource XpButtonStyle}" Margin="2" Padding="8,2" FontSize="10" Click="Clear_Click"/>
+            </WrapPanel>
+        </Border>
+        <Border DockPanel.Dock="Bottom" Background="#ECE9D8" BorderBrush="#716F64" BorderThickness="0,1,0,0" Padding="4">
+            <StackPanel Orientation="Horizontal">
+                <ItemsControl x:Name="Palette">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate><WrapPanel/></ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Width="18" Height="18" Margin="1" BorderBrush="#808080" BorderThickness="1" Cursor="Hand"
+                                    Background="{Binding Brush}" MouseLeftButtonDown="PalettePick_Click" Tag="{Binding Color}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </Border>
+        <Border Background="White" Margin="4">
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <Canvas x:Name="PaintCanvas" Width="1200" Height="800" Background="White"/>
+            </ScrollViewer>
+        </Border>
+    </DockPanel>
+</UserControl>

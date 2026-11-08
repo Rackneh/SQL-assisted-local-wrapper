@@ -1,0 +1,58 @@
+<UserControl x:Class="DoryNative.Views.SqlAuthorityWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="500" Width="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Toolbar -->
+        <Border Grid.Row="0" Background="#ECE9D8" BorderBrush="#ACA899" BorderThickness="0,0,0,1">
+            <Grid Margin="4,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="Refresh" Width="60" Height="22" Margin="2,0"
+                        Click="Refresh_Click" FontSize="10" FontFamily="Tahoma"/>
+                <TextBlock Grid.Column="1" x:Name="DbSummary" Text="No databases" FontSize="11"
+                           VerticalAlignment="Center" Margin="8,0" Foreground="#333333"/>
+                <Button Grid.Column="2" Content="Zoom +" Width="50" Height="22" Margin="2,0"
+                        Click="ZoomIn_Click" FontSize="10" FontFamily="Tahoma"/>
+                <Button Grid.Column="3" Content="Zoom -" Width="50" Height="22" Margin="2,0"
+                        Click="ZoomOut_Click" FontSize="10" FontFamily="Tahoma"/>
+                <Button Grid.Column="4" Content="Reset" Width="50" Height="22" Margin="2,0"
+                        Click="Reset_Click" FontSize="10" FontFamily="Tahoma"/>
+            </Grid>
+        </Border>
+
+        <!-- Graph canvas -->
+        <Border Grid.Row="1" Background="#1A1A2E" ClipToBounds="True">
+            <ScrollViewer x:Name="GraphScroll" HorizontalScrollBarVisibility="Auto"
+                          VerticalScrollBarVisibility="Auto"
+                          PreviewMouseWheel="GraphScroll_PreviewMouseWheel">
+                <Canvas x:Name="GraphCanvas" Background="Transparent" MinWidth="800" MinHeight="600"
+                        MouseLeftButtonDown="GraphCanvas_MouseDown"
+                        MouseMove="GraphCanvas_MouseMove"
+                        MouseLeftButtonUp="GraphCanvas_MouseUp"
+                        MouseRightButtonUp="GraphCanvas_RightClick">
+                    <Canvas.LayoutTransform>
+                        <ScaleTransform x:Name="ZoomTransform" ScaleX="1" ScaleY="1"/>
+                    </Canvas.LayoutTransform>
+                </Canvas>
+            </ScrollViewer>
+        </Border>
+
+        <!-- Status bar -->
+        <Border Grid.Row="2" Background="#ECE9D8" BorderBrush="#ACA899" BorderThickness="0,1,0,0">
+            <TextBlock x:Name="StatusText" Text="Ready" FontSize="10" Foreground="#444444"
+                       VerticalAlignment="Center" Margin="6,2"/>
+        </Border>
+    </Grid>
+</UserControl>

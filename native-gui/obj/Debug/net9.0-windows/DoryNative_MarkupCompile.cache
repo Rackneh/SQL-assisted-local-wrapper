@@ -1,0 +1,20 @@
+﻿DoryNative
+
+
+winexe
+C#
+.cs
+C:\Users\Rackneh\Documents\Github\Dory LLM\native-gui\obj\Debug\net9.0-windows\
+DoryNative
+none
+false
+TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\Rackneh\Documents\Github\Dory LLM\native-gui\App.xaml
+321353740030
+2800274732124
+66429279210
+2141612036057
+Games\FreeCellControl.xaml;Games\MinesweeperControl.xaml;Games\PinballControl.xaml;Games\SolitaireControl.xaml;Games\SpiderControl.xaml;Views\CalcWindow.xaml;Views\CmdWindow.xaml;Views\ExplorerWindow.xaml;Views\NotepadWindow.xaml;Views\PaintControl.xaml;Views\SandboxWindow.xaml;Views\SqlAuthorityWindow.xaml;Views\StudioShell.xaml;Views\TaskMgrControl.xaml;Views\WlmSimControl.xaml;Views\XpDesktop.xaml;Views\XpWindow.xaml;WlmV2\Views\AddContactDialog.xaml;WlmV2\Views\ChatWindowLive.xaml;WlmV2\Views\ContactNotification.xaml;WlmV2\Views\DisplayPictureDialog.xaml;WlmV2\Views\EmoticonPicker.xaml;WlmV2\Views\GifPickerWindow.xaml;WlmV2\Views\MainWindowLive.xaml;WlmV2\Views\OptionsDialog.xaml;WlmV2\Views\SceneDialog.xaml;WlmV2\Views\WinksPicker.xaml;WlmV2\WlmTheme.xaml;XpSim\BootSequenceWindow.xaml;XpSim\LogonWindow.xaml;XpSim\TurnOffDialog.xaml;XpSim\XpInstallerWindow.xaml;
+
+False
+

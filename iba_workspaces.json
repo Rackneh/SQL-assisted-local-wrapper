@@ -1,0 +1,25 @@
+{
+  "active_workspace": "C:\\Users\\Rackneh\\Documents\\Github\\InferenceLightingLab",
+  "active_session": "BuildErrorFix",
+  "owner": "dory-user@local",
+  "workspaces": [
+    {
+      "name": "InferenceLightingLab",
+      "path": "C:\\Users\\Rackneh\\Documents\\Github\\InferenceLightingLab",
+      "description": "Active Unity Inference Lighting Lab project",
+      "created_at": 1793728922.940003
+    },
+    {
+      "name": "WLM-w-2009",
+      "path": "C:\\Users\\Rackneh\\Documents\\Github\\Repositories\\WLM-w-2009",
+      "description": "WLM 2009 Server and Bots Repository",
+      "created_at": 1793729532.3254468
+    },
+    {
+      "name": "BlankTestProject",
+      "path": "C:\\Users\\Rackneh\\Documents\\Projects\\BlankTestProject",
+      "description": "Auto-created blank project test",
+      "created_at": 1793806069.7474873
+    }
+  ]
+}

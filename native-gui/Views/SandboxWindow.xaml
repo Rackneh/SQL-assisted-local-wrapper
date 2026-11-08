@@ -1,0 +1,66 @@
+<UserControl x:Class="DoryNative.Views.SandboxWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="340" Width="420">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#ECE9D8" BorderBrush="#ACA899" BorderThickness="0,0,0,1">
+            <TextBlock Text="Sandbox Controls" FontSize="11" FontWeight="Bold" FontFamily="Tahoma"
+                       VerticalAlignment="Center" Margin="8,0"/>
+        </Border>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="10">
+                <Border Background="#F5F5F5" BorderBrush="#ACA899" BorderThickness="1" CornerRadius="4"
+                        Padding="10" Margin="0,0,0,10">
+                    <StackPanel>
+                        <TextBlock Text="Status" FontWeight="Bold" FontSize="11" Margin="0,0,0,6"/>
+                        <TextBlock x:Name="StatusEnabled" Text="Enabled: —" FontSize="11" Margin="0,2"/>
+                        <TextBlock x:Name="StatusContainer" Text="Container: —" FontSize="11" Margin="0,2"/>
+                        <TextBlock x:Name="StatusImage" Text="Image: —" FontSize="11" Margin="0,2"/>
+                        <TextBlock x:Name="StatusState" Text="State: —" FontSize="11" Margin="0,2"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#F5F5F5" BorderBrush="#ACA899" BorderThickness="1" CornerRadius="4"
+                        Padding="10" Margin="0,0,0,10">
+                    <StackPanel>
+                        <TextBlock Text="Policy" FontWeight="Bold" FontSize="11" Margin="0,0,0,6"/>
+                        <CheckBox x:Name="PolicyNetwork" Content="Allow network access" FontSize="11" Margin="0,3"/>
+                        <CheckBox x:Name="PolicyFilesystem" Content="Allow filesystem write" FontSize="11" Margin="0,3"/>
+                        <CheckBox x:Name="PolicyPrivileged" Content="Allow privileged ops" FontSize="11" Margin="0,3"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#F5F5F5" BorderBrush="#ACA899" BorderThickness="1" CornerRadius="4"
+                        Padding="10">
+                    <StackPanel>
+                        <TextBlock Text="Mounted Paths" FontWeight="Bold" FontSize="11" Margin="0,0,0,6"/>
+                        <ItemsControl x:Name="MountList">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" FontSize="11" FontFamily="Consolas" Margin="0,1"/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border Grid.Row="2" Background="#ECE9D8" BorderBrush="#ACA899" BorderThickness="0,1,0,0" Padding="8,6">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Refresh" Width="70" Height="24" Margin="4,0" Click="Refresh_Click"
+                        FontSize="11" FontFamily="Tahoma"/>
+                <Button Content="Apply Policy" Width="90" Height="24" Margin="4,0" Click="ApplyPolicy_Click"
+                        Background="#316AC5" Foreground="White" BorderThickness="0" FontSize="11"
+                        FontFamily="Tahoma" Cursor="Hand"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

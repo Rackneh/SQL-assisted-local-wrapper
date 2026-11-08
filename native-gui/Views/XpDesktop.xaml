@@ -1,0 +1,530 @@
+<Window x:Class="DoryNative.Views.XpDesktop"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dory LLM - Windows XP Native" Height="768" Width="1024"
+        WindowStyle="None" ResizeMode="CanResizeWithGrip"
+        Background="#0054E3" WindowState="Maximized">
+    <Window.Resources>
+        <!-- XP Luna Blue Theme Brushes -->
+        <SolidColorBrush x:Key="XpTaskbar" Color="#245EDC"/>
+        <SolidColorBrush x:Key="XpStartBtn" Color="#245EDC"/>
+        <SolidColorBrush x:Key="XpStartBtnHover" Color="#2D6FE8"/>
+        <SolidColorBrush x:Key="XpStartBtnPressed" Color="#1848A0"/>
+        <SolidColorBrush x:Key="XpWindowBackground" Color="#ECE9D8"/>
+        <SolidColorBrush x:Key="XpWindowText" Color="#000000"/>
+        <SolidColorBrush x:Key="XpTitleBarActive" Color="#0A246A"/>
+        <SolidColorBrush x:Key="XpTitleBarInactive" Color="#7A96DF"/>
+        <SolidColorBrush x:Key="XpTitleBarText" Color="#FFFFFF"/>
+
+        <!-- XP Window Style -->
+        <Style x:Key="XpWindowStyle" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource XpWindowBackground}"/>
+            <Setter Property="BorderBrush" Value="#0055EA"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="CornerRadius" Value="8,8,0,0"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="#000000" Opacity="0.45" BlurRadius="30" ShadowDepth="10"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- XP Button Style -->
+        <Style x:Key="XpButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FFFFFF"/>
+            <Setter Property="BorderBrush" Value="#716F64"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="3">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#FFF7E6"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#316AC5"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#E8E8E8"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#716F64"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- XP Taskbar Button Style -->
+        <Style x:Key="XpTaskbarButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#1E4AB3"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="BorderBrush" Value="#3A75D4"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="12,4"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="2">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#2D6FE8"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#1848A0"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- XP-style context menus -->
+        <Style TargetType="ContextMenu">
+            <Setter Property="Background" Value="#ECE9D8"/>
+            <Setter Property="BorderBrush" Value="#716F64"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="11"/>
+        </Style>
+        <Style TargetType="MenuItem">
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="11"/>
+        </Style>
+
+        <ContextMenu x:Key="DesktopContextMenu">
+            <MenuItem Header="Arrange Icons" Click="CtxArrangeIcons_Click"/>
+            <MenuItem Header="Refresh" Click="CtxRefresh_Click"/>
+            <Separator/>
+            <MenuItem Header="Paste" IsEnabled="False"/>
+            <MenuItem Header="Paste Shortcut" IsEnabled="False"/>
+            <Separator/>
+            <MenuItem Header="New">
+                <MenuItem Header="Folder" IsEnabled="False"/>
+                <MenuItem Header="Shortcut" IsEnabled="False"/>
+                <MenuItem Header="Text Document" IsEnabled="False"/>
+            </MenuItem>
+            <Separator/>
+            <MenuItem Header="Properties" Click="CtxDesktopProperties_Click"/>
+        </ContextMenu>
+
+        <ContextMenu x:Key="TaskbarContextMenu">
+            <MenuItem Header="Toolbars">
+                <MenuItem Header="Quick Launch" IsCheckable="True"/>
+                <MenuItem Header="Address" IsCheckable="True" IsEnabled="False"/>
+                <MenuItem Header="Links" IsCheckable="True" IsEnabled="False"/>
+                <MenuItem Header="Desktop" IsCheckable="True" IsEnabled="False"/>
+            </MenuItem>
+            <Separator/>
+            <MenuItem Header="Cascade Windows" Click="CtxCascade_Click"/>
+            <MenuItem Header="Tile Windows Horizontally" Click="CtxTileH_Click"/>
+            <MenuItem Header="Tile Windows Vertically" Click="CtxTileV_Click"/>
+            <MenuItem Header="Show the Desktop" Click="CtxShowDesktop_Click"/>
+            <Separator/>
+            <MenuItem Header="Lock the Taskbar" IsCheckable="True" Click="CtxLockTaskbar_Click"/>
+            <Separator/>
+            <MenuItem Header="Properties" Click="CtxTaskbarProperties_Click"/>
+        </ContextMenu>
+
+        <ContextMenu x:Key="StartButtonContextMenu">
+            <MenuItem Header="Open" Click="CtxStartOpen_Click"/>
+            <MenuItem Header="Explore" IsEnabled="False"/>
+            <MenuItem Header="Search" IsEnabled="False"/>
+            <MenuItem Header="Run..." Click="CtxStartRun_Click"/>
+            <Separator/>
+            <MenuItem Header="Properties" IsEnabled="False"/>
+        </ContextMenu>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Desktop Content Area -->
+        <Grid x:Name="DesktopArea" Margin="0,0,0,40"
+              ContextMenu="{StaticResource DesktopContextMenu}">
+            <!-- Desktop Icons (below windows) -->
+            <StackPanel x:Name="DesktopIcons" Orientation="Vertical" HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="12,12">
+                <Button x:Name="IconMyComputer" Width="76" Height="70" Margin="0,0,0,8"
+                        Background="Transparent" BorderThickness="0" Cursor="Hand"
+                        Click="IconMyComputer_Click">
+                    <StackPanel HorizontalAlignment="Center">
+                        <Image x:Name="ImgMyComputer" Width="32" Height="32"/>
+                        <TextBlock Text="My Computer" FontSize="10" Foreground="White"
+                                   TextAlignment="Center" TextWrapping="Wrap" Margin="0,2,0,0"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="IconWlm" Width="76" Height="70" Margin="0,0,0,8"
+                        Background="Transparent" BorderThickness="0" Cursor="Hand"
+                        Click="IconWlm_Click">
+                    <StackPanel HorizontalAlignment="Center">
+                        <Image x:Name="ImgWlm" Width="32" Height="32"/>
+                        <TextBlock Text="Windows Live&#x0a;Messenger" FontSize="10" Foreground="White"
+                                   TextAlignment="Center" TextWrapping="Wrap" Margin="0,2,0,0"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="76" Height="70" Margin="0,0,0,8" Background="Transparent"
+                        BorderThickness="0" Cursor="Hand" Click="IconExplorer_Click">
+                    <StackPanel HorizontalAlignment="Center">
+                        <Image x:Name="ImgExplorer" Width="32" Height="32"/>
+                        <TextBlock Text="My Documents" FontSize="10" Foreground="White"
+                                   TextAlignment="Center" Margin="0,2,0,0"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="76" Height="70" Margin="0,0,0,8" Background="Transparent"
+                        BorderThickness="0" Cursor="Hand" Click="IconNotepad_Click">
+                    <StackPanel HorizontalAlignment="Center">
+                        <Image x:Name="ImgNotepad" Width="32" Height="32"/>
+                        <TextBlock Text="Notepad" FontSize="10" Foreground="White"
+                                   TextAlignment="Center" Margin="0,2,0,0"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="76" Height="70" Margin="0,0,0,8" Background="Transparent"
+                        BorderThickness="0" Cursor="Hand" Click="IconCmd_Click">
+                    <StackPanel HorizontalAlignment="Center">
+                        <Image x:Name="ImgCmd" Width="32" Height="32"/>
+                        <TextBlock Text="Command Prompt" FontSize="10" Foreground="White"
+                                   TextAlignment="Center" Margin="0,2,0,0"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="76" Height="70" Margin="0,0,0,8" Background="Transparent"
+                        BorderThickness="0" Cursor="Hand" Click="IconRecycle_Click">
+                    <StackPanel HorizontalAlignment="Center">
+                        <Image x:Name="ImgRecycle" Width="32" Height="32"/>
+                        <TextBlock Text="Recycle Bin" FontSize="10" Foreground="White"
+                                   TextAlignment="Center" Margin="0,2,0,0"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+            <!-- Window Container - child windows are added here (above icons;
+                 no Background so empty canvas areas don't block icon clicks) -->
+            <Canvas x:Name="WindowCanvas"
+                    ContextMenu="{StaticResource DesktopContextMenu}"/>
+        </Grid>
+
+        <!-- Start Menu Popup -->
+        <Border x:Name="StartMenu" HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                Margin="0,0,0,40" Width="380" Background="#ECE9D8"
+                BorderBrush="#716F64" BorderThickness="1" CornerRadius="6,6,0,0"
+                Visibility="Collapsed" Panel.ZIndex="1000">
+            <Border.Effect>
+                <DropShadowEffect Color="#000000" Opacity="0.4" BlurRadius="12" ShadowDepth="2"/>
+            </Border.Effect>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="64"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <!-- Header: user banner -->
+                <Border Grid.Row="0" Background="#245EDC" CornerRadius="6,6,0,0">
+                    <Grid>
+                        <Image x:Name="StartMenuAvatar" Width="40" Height="40"
+                               HorizontalAlignment="Left" Margin="10,0" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="StartMenuUser" Text="User" FontSize="15" FontWeight="Bold"
+                                   Foreground="White" VerticalAlignment="Center" Margin="62,0,0,0"
+                                   FontFamily="Trebuchet MS"/>
+                    </Grid>
+                </Border>
+                <!-- Two-column body -->
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- Left: pinned programs -->
+                    <StackPanel Grid.Column="0" Margin="6,6">
+                        <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                Margin="0,1" Click="MenuWlm_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="MenuImgWlm" Width="20" Height="20" Margin="0,0,8,0"/>
+                                <TextBlock Text="Windows Live Messenger" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                Margin="0,1" Click="MenuExplorerAll_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="MenuImgExplorer" Width="20" Height="20" Margin="0,0,8,0"/>
+                                <TextBlock Text="Windows Explorer" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                Margin="0,1" Click="IconNotepad_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="MenuImgNotepad" Width="20" Height="20" Margin="0,0,8,0"/>
+                                <TextBlock Text="Notepad" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                Margin="0,1" Click="IconCmd_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="MenuImgCmd" Width="20" Height="20" Margin="0,0,8,0"/>
+                                <TextBlock Text="Command Prompt" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                Margin="0,1" Click="IconCalc_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="MenuImgCalc" Width="20" Height="20" Margin="0,0,8,0"/>
+                                <TextBlock Text="Calculator" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Separator Margin="4,6" Background="#ACA899"/>
+                        <Button x:Name="AllProgramsBtn" Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                Margin="0,1" Click="MenuAllPrograms_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="All Programs" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                                <TextBlock Text="  ▶" FontSize="9" VerticalAlignment="Center" Margin="6,0,0,0"/>
+                            </StackPanel>
+                        </Button>
+                        <!-- All Programs flyout -->
+                        <Popup x:Name="AllProgramsFlyout" AllowsTransparency="True" StaysOpen="False"
+                               PlacementTarget="{Binding ElementName=AllProgramsBtn}" Placement="Right">
+                        <Border Background="#ECE9D8"
+                                BorderBrush="#716F64" BorderThickness="1" CornerRadius="4"
+                                Padding="4" MaxHeight="420">
+                            <StackPanel>
+                                <TextBlock Text="Accessories" FontSize="10" FontWeight="Bold" Foreground="#444"
+                                           Margin="6,2"/>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="IconNotepad_Click">
+                                    <TextBlock Text="Notepad" FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="IconCalc_Click">
+                                    <TextBlock Text="Calculator" FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="IconPaint_Click">
+                                    <TextBlock Text="Paint" FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="IconCmd_Click">
+                                    <TextBlock Text="Command Prompt" FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                                <TextBlock Text="Games" FontSize="10" FontWeight="Bold" Foreground="#444"
+                                           Margin="6,6,6,2"/>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="IconSolitaire_Click">
+                                    <TextBlock Text="Solitaire" FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="IconFreeCell_Click">
+                                    <TextBlock Text="FreeCell" FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="IconSpider_Click">
+                                    <TextBlock Text="Spider Solitaire" FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="IconMinesweeper_Click">
+                                    <TextBlock Text="Minesweeper" FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="IconPinball_Click">
+                                    <TextBlock Text="3D Pinball" FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                                <TextBlock Text="System Tools" FontSize="10" FontWeight="Bold" Foreground="#444"
+                                           Margin="6,6,6,2"/>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="IconTaskMgr_Click">
+                                    <TextBlock Text="Task Manager" FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="IconRun_Click">
+                                    <TextBlock Text="Run..." FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                                <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                        Margin="0,1" Padding="8,3" Click="MenuControlPanel_Click">
+                                    <TextBlock Text="Control Panel" FontSize="11" FontFamily="Tahoma"/>
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                        </Popup>
+                    </StackPanel>
+                    <!-- Right: places + system -->
+                    <StackPanel Grid.Column="1" Margin="6,6">
+                        <Border Background="#D4D0C8" Padding="6,4" Margin="0,0,0,4">
+                            <TextBlock Text="My Recent Documents" FontSize="10" FontWeight="Bold"
+                                       Foreground="#444444"/>
+                        </Border>
+                        <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                Margin="0,1" Click="MenuMyDocs_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="MenuImgDocs" Width="20" Height="20" Margin="0,0,8,0"/>
+                                <TextBlock Text="My Documents" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                Margin="0,1" Click="MenuMyComputer_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="MenuImgComputer" Width="20" Height="20" Margin="0,0,8,0"/>
+                                <TextBlock Text="My Computer" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Separator Margin="4,6" Background="#ACA899"/>
+                        <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                Margin="0,1" Click="MenuControlPanel_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="MenuImgCpl" Width="20" Height="20" Margin="0,0,8,0"/>
+                                <TextBlock Text="Control Panel" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                Margin="0,1" Click="MenuHelp_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="MenuImgHelp" Width="20" Height="20" Margin="0,0,8,0"/>
+                                <TextBlock Text="Help and Support" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource XpButtonStyle}" HorizontalContentAlignment="Left"
+                                Margin="0,1" Click="MenuRun_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="MenuImgRun" Width="20" Height="20" Margin="0,0,8,0"/>
+                                <TextBlock Text="Run..." FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+                <!-- Footer: Log Off / Turn Off -->
+                <Border Grid.Row="2" Background="#D4D0C8" CornerRadius="0,0,6,6">
+                    <Grid>
+                        <Button x:Name="MenuLogOffBtn" HorizontalAlignment="Left" Margin="8,0"
+                                Background="Transparent" BorderThickness="0" Cursor="Hand"
+                                Click="MenuLogOff_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="MenuImgLogOff" Width="20" Height="20" Margin="0,0,6,0"/>
+                                <TextBlock Text="Log Off" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="MenuTurnOffBtn" HorizontalAlignment="Right" Margin="0,0,8,0"
+                                Background="Transparent" BorderThickness="0" Cursor="Hand"
+                                Click="MenuTurnOff_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Turn Off Computer" FontSize="11" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                                <Image x:Name="MenuImgTurnOff" Width="20" Height="20" Margin="6,0,0,0"/>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+
+        <!-- Taskbar -->
+        <Border x:Name="Taskbar" Height="40" VerticalAlignment="Bottom"
+                BorderBrush="#0055EA" BorderThickness="0,2,0,0"
+                ContextMenu="{StaticResource TaskbarContextMenu}">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#1E4AB3" Offset="0"/>
+                    <GradientStop Color="#3A75D4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Start Button: green XP orb -->
+                <Button x:Name="StartButton" Grid.Column="0" Width="104" Height="34" Margin="2,3,0,3"
+                        Cursor="Hand"
+                        ContextMenu="{StaticResource StartButtonContextMenu}"
+                        Click="StartButton_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="Orb" CornerRadius="0,12,12,0" Padding="10,0,14,0">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="#5CB85C" Offset="0"/>
+                                        <GradientStop Color="#3E9E4F" Offset="0.35"/>
+                                        <GradientStop Color="#2C7A38" Offset="0.8"/>
+                                        <GradientStop Color="#1E5C28" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                    <Image Source="{TemplateBinding Tag}" Width="17" Height="15" Margin="0,0,7,0"/>
+                                    <TextBlock Text="start" FontStyle="Italic" FontWeight="Bold"
+                                               FontSize="14" Foreground="White" VerticalAlignment="Center"
+                                               FontFamily="Trebuchet MS"/>
+                                </StackPanel>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="Orb" Property="Background">
+                                        <Setter.Value>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                                <GradientStop Color="#6FC86F" Offset="0"/>
+                                                <GradientStop Color="#4CAF50" Offset="0.35"/>
+                                                <GradientStop Color="#358A40" Offset="0.8"/>
+                                                <GradientStop Color="#256B2E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="Orb" Property="Background">
+                                        <Setter.Value>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                                <GradientStop Color="#2C6E33" Offset="0"/>
+                                                <GradientStop Color="#3E9E4F" Offset="0.4"/>
+                                                <GradientStop Color="#1E5C28" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <!-- Window Task List -->
+                <ItemsControl x:Name="TaskbarItems" Grid.Column="1" Margin="8,0">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Button Height="30" Margin="2,0" Padding="6,0"
+                                    Style="{StaticResource XpTaskbarButtonStyle}"
+                                    Click="TaskbarItem_Click"
+                                    Tag="{Binding WindowId}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="{Binding Icon}" Width="16" Height="16"
+                                           Margin="0,0,5,0" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Title}" TextTrimming="CharacterEllipsis"
+                                               VerticalAlignment="Center" MaxWidth="140"/>
+                                </StackPanel>
+                            </Button>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <!-- System Tray -->
+                <StackPanel Grid.Column="2" Orientation="Horizontal" Margin="8,0">
+                    <TextBlock x:Name="Clock" VerticalAlignment="Center" Foreground="White"
+                               FontFamily="Tahoma" FontSize="11" Margin="8,0"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

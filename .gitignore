@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Models
+models/*.gguf
+
+# Build artifacts
+llama.cpp-dory/build/
+*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+*.log

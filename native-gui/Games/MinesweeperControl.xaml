@@ -1,0 +1,59 @@
+<UserControl x:Class="DoryNative.Games.MinesweeperControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#C0C0C0">
+    <UserControl.Resources>
+        <Style x:Key="XpMenuItem" TargetType="MenuItem">
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+        </Style>
+    </UserControl.Resources>
+    <DockPanel>
+        <!-- Menu bar -->
+        <Border DockPanel.Dock="Top" Background="#C0C0C0" Padding="2,1">
+            <Menu Background="#C0C0C0" BorderThickness="0" FontFamily="Tahoma">
+                <MenuItem Header="_Game" Style="{StaticResource XpMenuItem}">
+                    <MenuItem Header="_New" Click="NewGame_Click" InputGestureText="F2"/>
+                    <Separator/>
+                    <MenuItem Header="_Beginner" Click="DiffBeg_Click" IsChecked="True"/>
+                    <MenuItem Header="_Intermediate" Click="DiffInt_Click"/>
+                    <MenuItem Header="_Expert" Click="DiffExp_Click"/>
+                    <Separator/>
+                    <MenuItem Header="E_xit" Click="Exit_Click"/>
+                </MenuItem>
+                <MenuItem Header="_Help" Style="{StaticResource XpMenuItem}">
+                    <MenuItem Header="_About Minesweeper" Click="About_Click"/>
+                </MenuItem>
+            </Menu>
+        </Border>
+
+        <!-- Classic raised frame -->
+        <Border BorderBrush="#808080" BorderThickness="3" Padding="8"
+                Background="#C0C0C0">
+            <StackPanel HorizontalAlignment="Center">
+                <!-- Header: counter, face, timer -->
+                <Border BorderBrush="#808080" BorderThickness="2" Padding="6,4"
+                        Background="#C0C0C0" Margin="0,0,0,8">
+                    <DockPanel Width="{Binding ElementName=GridHost, Path=ActualWidth}">
+                        <StackPanel x:Name="MineCounter" DockPanel.Dock="Left" Orientation="Horizontal"/>
+                        <Button x:Name="FaceBtn" DockPanel.Dock="Top" HorizontalAlignment="Center"
+                                Width="30" Height="30" Padding="0" Click="Face_Click"
+                                Background="#C0C0C0">
+                            <Border BorderBrush="#FFFFFF" BorderThickness="2" Padding="2">
+                                <Image x:Name="FaceImg" Source="{Binding}"/>
+                            </Border>
+                        </Button>
+                        <StackPanel x:Name="TimerCounter" DockPanel.Dock="Right" Orientation="Horizontal"/>
+                    </DockPanel>
+                </Border>
+                <!-- Minefield frame -->
+                <Border BorderBrush="#808080" BorderThickness="3" Padding="0" Background="#C0C0C0">
+                    <ScrollViewer x:Name="GridScroll" HorizontalScrollBarVisibility="Auto"
+                                  VerticalScrollBarVisibility="Auto" MaxHeight="480" MaxWidth="560">
+                        <Canvas x:Name="GridHost" Background="#C0C0C0"/>
+                    </ScrollViewer>
+                </Border>
+            </StackPanel>
+        </Border>
+    </DockPanel>
+</UserControl>
