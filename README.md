@@ -683,9 +683,3 @@ This project would not exist without the work of many people:
 ### Asset notice
 
 The `gui/static/xp_assets/` and `gui/static/wlm/` directories contain Windows XP and Windows Live Messenger-inspired assets used for a personal/educational retro interface. They are **not** covered by any license granted by this repository. If you fork or redistribute this project, verify that you have the right to use and redistribute those assets, or replace them with your own.
-
----
-
-## License
-
-No license has been added to this repository yet. Add a `LICENSE` file before distributing the wrapper code. Model weights are governed by NVIDIA's [OpenMDW-1.1 license](https://openmdw.ai/license/1-1/); Windows XP and WLM assets remain subject to Microsoft's rights.
